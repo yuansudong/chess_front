@@ -1,3 +1,7 @@
+$orange: #f7c049;
+.DarkGrey {
+  color: #999999;
+}
 .container {
   width: 1043px;
   margin: 0 auto;
@@ -19,4 +23,30 @@
 .white {
   color: #ffffff;
 }
-
+.cursorPointer {
+  cursor: pointer;
+}
+.borderRadius3 {
+  border-radius: 3px;
+}
+// 公共大标题
+.com_title {
+  height: 28px;
+  .before {
+    background-color: $orange;
+    width: 4px;
+    height: 100%;
+  }
+  .title {
+    margin-left: 6px;
+    font-size: 24px;
+    color: #545454;
+  }
+  .more {
+    margin-right: 15px;
+    margin-top: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    color: $orange;
+  }
+}

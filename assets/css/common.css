@@ -1,3 +1,6 @@
+.DarkGrey {
+  color: #999999; }
+
 .container {
   width: 1043px;
   margin: 0 auto; }
@@ -13,3 +16,27 @@
 
 .white {
   color: #ffffff; }
+
+.cursorPointer {
+  cursor: pointer; }
+
+.borderRadius3 {
+  -webkit-border-radius: 3px;
+          border-radius: 3px; }
+
+.com_title {
+  height: 28px; }
+  .com_title .before {
+    background-color: #f7c049;
+    width: 4px;
+    height: 100%; }
+  .com_title .title {
+    margin-left: 6px;
+    font-size: 24px;
+    color: #545454; }
+  .com_title .more {
+    margin-right: 15px;
+    margin-top: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #f7c049; }

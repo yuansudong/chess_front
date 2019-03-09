@@ -125,15 +125,39 @@ html, body {
   width: 100%;
   background-size: cover;
   background-image: url("../../dest/img/footerBag.png");
-  .left_content {
+
+  .left_contents {
     width: 685px;
+    line-height: 122px;
   }
-  .right_content {
+
+  .right_contents {
     width: 328px;
+
+    .text {
+      margin: 34px 24px 0 8px;
+      color: $white;
+      font-size: 12px;
+    }
+
+    // 分享列表
+    .shareList {
+      margin-top: 26px;
+
+      li {
+        float: left;
+        margin-right: 6px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
   }
 
   .logo {
-
+    display: block;
+    margin: 34px 34px 0 0;
   }
 
   .navList {
@@ -150,18 +174,6 @@ html, body {
       }
     }
 
-  }
-
-  // 分享列表
-  .shareList {
-    li {
-      float: left;
-      margin-right: 6px;
-
-      &:last-child {
-        margin-right: 0;
-      }
-    }
   }
 }
 
@@ -205,6 +217,7 @@ html, body {
   // 二维码及分享
   .QrCodeShare {
     padding: 12px;
+    border-radius: 3px;
     background-color: $white;
     // 内容
     .content {
@@ -235,15 +248,64 @@ html, body {
       }
     }
   }
+  // 妈妈精选
+  .momSelect {
+    .com_title {
+      margin: 20px 0 10px 0;
+    }
+    .momList {
+      border-radius: 3px;
+      padding: 10px 0;
+      background-color: $white;
+      li {
+        margin-bottom: 24px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        &:nth-child(1),&:nth-child(2),&:nth-child(3) {
+          .count {
+            color: $orange;
+          }
+
+        }
+      }
+      .content {
+        .count {
+          width: 45px;
+          line-height: 66px;
+          text-align: center;
+          color: #b4b4b4;
+        }
+
+        .img {
+
+        }
+        .selectContent {
+          margin-left: 16px;
+          .name {
+            font-size: 15px;
+            color: #424242;
+          }
+          .mum,.type {
+            .iconfont {
+              margin-left: 4px;
+            }
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+  // 最新评价
+  .newEvaluation {}
 }
 
 .listContent {
   width: 685px;
   color: #999999;
-
   li {
+    display: block;
     margin-bottom: 15px;
-
     &:last-child {
       margin-bottom: 0;
     }
@@ -257,8 +319,9 @@ html, body {
   .title {
     position: relative;
     padding: 10px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
     background-color: $white;
-
     .selectAd {
       transition: 0.4s all;
       display: none;
@@ -310,7 +373,8 @@ html, body {
   .commentsText {
     padding: 7px 10px;
     background-color: $white;
-
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
     .portrait {
       margin: 10px 10px 0 0;
     }
@@ -328,15 +392,10 @@ html, body {
         font-size: 14px;
         font-weight: 500;
         color: #999999;
-
         overflow: hidden;
-
         text-overflow: ellipsis;
-
         display: -webkit-box;
-
         -webkit-box-orient: vertical;
-
         -webkit-line-clamp: 2;
 
       }
@@ -373,3 +432,4 @@ html, body {
     background-color: $orange;
   }
 }
+

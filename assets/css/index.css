@@ -98,21 +98,31 @@ html, body {
   -webkit-background-size: cover;
           background-size: cover;
   background-image: url("../../dest/img/footerBag.png"); }
-  .footer .left_content {
-    width: 685px; }
-  .footer .right_content {
+  .footer .left_contents {
+    width: 685px;
+    line-height: 122px; }
+  .footer .right_contents {
     width: 328px; }
+    .footer .right_contents .text {
+      margin: 34px 24px 0 8px;
+      color: #fff;
+      font-size: 12px; }
+    .footer .right_contents .shareList {
+      margin-top: 26px; }
+      .footer .right_contents .shareList li {
+        float: left;
+        margin-right: 6px; }
+        .footer .right_contents .shareList li:last-child {
+          margin-right: 0; }
+  .footer .logo {
+    display: block;
+    margin: 34px 34px 0 0; }
   .footer .navList li {
     float: left;
     margin-right: 10px; }
     .footer .navList li a {
       color: #fff; }
     .footer .navList li:last-child {
-      margin-right: 0; }
-  .footer .shareList li {
-    float: left;
-    margin-right: 6px; }
-    .footer .shareList li:last-child {
       margin-right: 0; }
 
 .banner {
@@ -144,6 +154,8 @@ html, body {
   width: 328px; }
   .right_content .QrCodeShare {
     padding: 12px;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
     background-color: #fff; }
     .right_content .QrCodeShare .content {
       margin-left: 15px; }
@@ -160,11 +172,39 @@ html, body {
       margin-right: 6px; }
       .right_content .QrCodeShare .shareList li:last-child {
         margin-right: 0; }
+  .right_content .momSelect .com_title {
+    margin: 20px 0 10px 0; }
+  .right_content .momSelect .momList {
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    padding: 10px 0;
+    background-color: #fff; }
+    .right_content .momSelect .momList li {
+      margin-bottom: 24px; }
+      .right_content .momSelect .momList li:last-child {
+        margin-bottom: 0; }
+      .right_content .momSelect .momList li:nth-child(1) .count, .right_content .momSelect .momList li:nth-child(2) .count, .right_content .momSelect .momList li:nth-child(3) .count {
+        color: #f79640; }
+    .right_content .momSelect .momList .content .count {
+      width: 45px;
+      line-height: 66px;
+      text-align: center;
+      color: #b4b4b4; }
+    .right_content .momSelect .momList .content .selectContent {
+      margin-left: 16px; }
+      .right_content .momSelect .momList .content .selectContent .name {
+        font-size: 15px;
+        color: #424242; }
+      .right_content .momSelect .momList .content .selectContent .mum, .right_content .momSelect .momList .content .selectContent .type {
+        font-size: 13px; }
+        .right_content .momSelect .momList .content .selectContent .mum .iconfont, .right_content .momSelect .momList .content .selectContent .type .iconfont {
+          margin-left: 4px; }
 
 .listContent {
   width: 685px;
   color: #999999; }
   .listContent li {
+    display: block;
     margin-bottom: 15px; }
     .listContent li:last-child {
       margin-bottom: 0; }
@@ -173,6 +213,10 @@ html, body {
   .listContent .title {
     position: relative;
     padding: 10px;
+    -webkit-border-top-left-radius: 3px;
+            border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+            border-top-right-radius: 3px;
     background-color: #fff; }
     .listContent .title .selectAd {
       -webkit-transition: 0.4s all;
@@ -214,7 +258,11 @@ html, body {
       line-height: 22px; }
   .listContent .commentsText {
     padding: 7px 10px;
-    background-color: #fff; }
+    background-color: #fff;
+    -webkit-border-bottom-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+            border-bottom-right-radius: 3px; }
     .listContent .commentsText .portrait {
       margin: 10px 10px 0 0; }
     .listContent .commentsText .textContent {
