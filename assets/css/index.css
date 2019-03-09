@@ -2,6 +2,9 @@
 /*
 首页需要的样式
 */
+html, body {
+  background-color: #f2f2f2; }
+
 .topNav {
   height: 80px;
   width: 100%;
@@ -48,7 +51,8 @@
       outline: medium; }
   .topNav .message {
     position: relative;
-    margin: 24px 0 0 32px; }
+    margin: 0 30px 0 30px;
+    bottom: 24px; }
     .topNav .message i {
       color: #da9500;
       font-size: 22px; }
@@ -70,3 +74,27 @@
           -ms-transform: scale(0.7);
               transform: scale(0.7);
       font-family: Tahoma !important; }
+  .topNav .portrait {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin-top: 10px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    background-image: #fff; }
+    .topNav .portrait .okLogin {
+      border: 2px solid #fff; }
+    .topNav .portrait img {
+      width: 58px;
+      height: 58px;
+      -webkit-border-radius: 50%;
+              border-radius: 50%; }
+
+.banner {
+  position: relative;
+  height: 415px;
+  margin: 15px auto;
+  background-color: #528CE0; }
+  .banner .editor {
+    position: absolute;
+    left: 20px;
+    top: 20px; }

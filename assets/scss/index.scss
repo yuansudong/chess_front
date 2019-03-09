@@ -3,6 +3,10 @@ $orange: #f79640;
 /*
 首页需要的样式
 */
+html, body {
+  background-color: #f2f2f2;
+}
+
 .topNav {
   height: 80px;
   width: 100%;
@@ -62,12 +66,15 @@ $orange: #f79640;
   // 消息
   .message {
     position: relative;
-    margin: 24px 0 0 32px;
+    margin: 0 30px 0 30px;
+    bottom: 24px;
+
     i {
       color: #da9500;
       font-size: 22px;
     }
-    .icon-car-count{
+
+    .icon-car-count {
       position: absolute;
       top: -6px;
       right: -8px;
@@ -81,7 +88,38 @@ $orange: #f79640;
       padding: 6px;
       font-size: 14px;
       transform: scale(.7);
-      font-family: Tahoma!important;
+      font-family: Tahoma !important;
     }
+  }
+
+  // 头像
+  .portrait {
+    //width: 62px;
+    //height: 62px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    border-radius: 50%;
+    background-image: $white;
+    .okLogin{
+      border: 2px solid $white;
+    }
+    img {
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+    }
+  }
+}
+
+.banner {
+  position: relative;
+  height: 415px;
+  margin: 15px auto;
+  background-color: #528CE0;
+  // 编辑推荐
+  .editor {
+    position: absolute;
+    left: 20px;
+    top: 20px;
   }
 }
