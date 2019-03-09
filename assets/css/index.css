@@ -12,5 +12,61 @@
     padding: 20px 0 20px 22px; }
   .topNav .navList {
     font-size: 18px;
-    color: #fff;
-    float: left; }
+    margin-left: 60px;
+    color: #fff; }
+    .topNav .navList li {
+      -webkit-transition: 0.4s all;
+      -o-transition: 0.4s all;
+      transition: 0.4s all;
+      width: 100px;
+      height: 80px;
+      line-height: 80px;
+      text-align: center;
+      float: left; }
+    .topNav .navList .activeClass {
+      background-color: #f79640; }
+  .topNav .search {
+    position: relative;
+    width: 146px;
+    height: 30px;
+    margin-top: 24px;
+    margin-left: 40px; }
+    .topNav .search .icon-Magnifier {
+      position: absolute;
+      top: 5px;
+      left: 10px;
+      font-size: 20px;
+      color: #f79640;
+      font-weight: 600; }
+    .topNav .search input[type="text"] {
+      width: 106px;
+      padding-left: 40px;
+      -webkit-border-radius: 14px;
+              border-radius: 14px;
+      border: none;
+      height: 30px;
+      outline: medium; }
+  .topNav .message {
+    position: relative;
+    margin: 24px 0 0 32px; }
+    .topNav .message i {
+      color: #da9500;
+      font-size: 22px; }
+    .topNav .message .icon-car-count {
+      position: absolute;
+      top: -6px;
+      right: -8px;
+      min-width: 8px;
+      text-align: center;
+      line-height: 8px;
+      display: inline-block;
+      background: red;
+      color: #fff;
+      -webkit-border-radius: 17px;
+              border-radius: 17px;
+      padding: 6px;
+      font-size: 14px;
+      -webkit-transform: scale(0.7);
+          -ms-transform: scale(0.7);
+              transform: scale(0.7);
+      font-family: Tahoma !important; }

@@ -1,4 +1,4 @@
-@charset"utf-8";
+@charset "utf-8";
 body,
 dd,
 div,
@@ -45,18 +45,28 @@ ul {
 a {
     text-decoration: none;
 }
-a:hover {
-    color: #f4d03f;
+
+a:link{
+    text-decoration:none;
+}
+a:visited{
+    text-decoration:none;
+}
+a:hover{
+    text-decoration:none;
+}
+a:active{
+    text-decoration:none;
 }
 
 body,
 html {
     font-family: microsoft yahei, sans-serif;
-    text-rendering: optimizeLegibility!important;
-    -webkit-font-smoothing: antialiased!important;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
     -moz-osx-font-smoothing: grayscale;
-    width: 100%!important;
-    height: 100%!important;
+    width: 100% !important;
+    height: 100% !important;
 }
 
 .clearfix:after {

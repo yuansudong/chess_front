@@ -48,7 +48,7 @@ gulp.task("es6", function () {
 
 gulp.task("run", function () {
     livereload.listen();
-    gulp.watch("assets/scss/*.scss", gulp.series('sass')); // 编译sass
-    gulp.watch("assets/css/*.css", gulp.series('cleanCss'));
-    gulp.watch("assets/js/*.js", gulp.series('es6')); // 编译es6
+    watch("assets/scss/*.scss", gulp.series('sass')); // 编译sass
+    watch("assets/css/*.css", gulp.series('cleanCss'));
+    watch("assets/js/*.js", gulp.series('es6')); // 编译es6
 });
