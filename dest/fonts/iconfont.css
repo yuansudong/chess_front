@@ -1,0 +1,29 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1552107152797'); /* IE9 */
+  src: url('iconfont.eot?t=1552107152797#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAOcAAsAAAAAB8QAAANNAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDHAqDBIJkATYCJAMQCwoABCAFhG0HQRvPBhEVnJ3IfhzYMeEPMBr9x6ZSjA3+PXjg67T3kWaCCjwtjVlZJwjpCmiAgDG9W3MO2KgIVZI933n0D8ljKc3ofy7Hd1eWwPyW5TLHeH4YYLytF9BYm6Is4ALJvWHsyovYDwHYiZBGlClXpQ4GGmOYAESXju1bYqS06JpCgYHArWSutonpWDDkBHkOmOZ/X7wmJwMkFoVxUI12ZdtQ4pl6VkWZ/02aKBNzPDPAFoEC0oAG0aHU2goVRtMo7EpnTQEwMJAwVkP6syr//yP+XqSGaQPZ+88Tbhj5TgDyoF/BM5sBCc/SJeRlVSD/BvbSABiAFegJrGaQwrxIIlHO0DCr0+nZeMTBSfuR5r6JB0Rnu//iQ3l6wf5495OFsY0LXfXsm0LF0isTL4UNFsvanB/O9et1Zd05C+avtntNXLtwUWB9VVg4cPm1MidcMa1drnoJcf1a07VrzSxxnYCd7OZyDZwYUG/uiE3r/Pu822w/833UxuIbo55HbSi+IcoyTRhqjC3Wc8EHn4+tbgfysuxV67WvLvaUcAyxlqlexkrI0ixib+m9wtI/YP4uOSy0ebsBBXNSnZWdqXMKBijtQ8WQebt9P0d4lywV5WW38ebioDnqxHE1x2S5LEc5O06dPXSQXLVKQtEgzIZauRKz0MUBj+3u4359XRAUY47//bVe3fKnSQ8A/h9QE1Qpn2Kqo8qMv1e3VJG/9hvujW7ytrlnka+GQwNwY0P76dDz39S05716nsL7R810LIDmAkOntcyzrbGg5WoSKbjxQuzYgT+TBB/3xrD7IzYLDM6DILESDgqDOEQT08CCgzxww6A42ElVfrEDX71QCG0DUowBIPCyDSQeHASFl/OIJt4FCwHeghteKbCDqJfvmg4JhUtpRiVoQf8hmHEgyyCXoPCG7p0VJwU++YW8hADURZVNXHFAHmPC8nGNCAHx2EMHDsOcR5h4jGik8CJTW5ZU9qTCjP3qojSGFIEsoP2BwBgNyC0tLrnP3yDnLVO4BldhfkFsEVoHtULVArlKh1a4a3lk8eE0hCCAsFEPdMCMshkdgam8V4QMUfA9wpNWiYpRW2kxv7x/wmWAnXG1TgoltLCgroZ9DSX+d66q3BAoIK9WAAAA') format('woff2'),
+  url('iconfont.woff?t=1552107152797') format('woff'),
+  url('iconfont.ttf?t=1552107152797') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1552107152797#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-zan:before {
+  content: "\e64c";
+}
+
+.icon-Pathx:before {
+  content: "\e603";
+}
+
+.icon-Magnifier:before {
+  content: "\e62d";
+}
+
