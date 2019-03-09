@@ -250,9 +250,6 @@ html, body {
   }
   // 妈妈精选
   .momSelect {
-    .com_title {
-      margin: 20px 0 10px 0;
-    }
     .momList {
       border-radius: 3px;
       padding: 10px 0;
@@ -266,7 +263,6 @@ html, body {
           .count {
             color: $orange;
           }
-
         }
       }
       .content {
@@ -275,10 +271,6 @@ html, body {
           line-height: 66px;
           text-align: center;
           color: #b4b4b4;
-        }
-
-        .img {
-
         }
         .selectContent {
           margin-left: 16px;
@@ -297,7 +289,109 @@ html, body {
     }
   }
   // 最新评价
-  .newEvaluation {}
+  .newEvaluation {
+    .evaluationList {
+      li {
+        display: block;
+        padding: 10px 4px;
+        background-color: $white;
+        margin-bottom: 10px;
+        border-radius: 3px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      // 图片和标题
+      .imgAndTitle {
+        margin-left: 6px;
+        div:first-child {
+          margin-right: 10px;
+        }
+        .star{
+          .iconfont {
+            font-size: 12px;
+            color: #f7c049;
+          }
+        }
+      }
+      // 评论留言
+      .commentsText {
+        position: relative;
+        padding: 0 30px;
+        margin: 12px 0 4px 0;
+        .text {
+          font-size: 14px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+        }
+        .before,.active {
+          position: absolute;
+          display: inline-block;
+          width: 23px;
+          height: 21px;
+          background-size: 23px 21px;
+        }
+        .before {
+          top: 0;
+          left: 0;
+          background-image: url("../../dest/img/leftQuotes.png");
+        }
+        .active {
+          right: 0;
+          bottom: 0;
+          background-image: url("../../dest/img/rightQuotes.png");
+        }
+      }
+      // 赞赏
+      .appreciates {
+        padding: 0 30px;
+        .name {
+          &:before {
+            content: "";
+            display: inline-block;
+            vertical-align: middle;
+            width: 30px;
+            height: 1px;
+            margin-right: 2px;
+            background-color: #dddddd;
+          }
+          color: $orange;
+          font-size: 14px;
+        }
+      }
+    }
+
+
+  }
+  // 热门标签
+  .tags {
+    border-radius: 3px;
+    .content {
+      background-color: $white;
+      padding: 20px 32px;
+      li {
+        float: left;
+        margin-right: 9px;
+        margin-bottom: 12px;
+        &:last-child {
+          margin-right: 0;
+          margin-bottom: 0;
+        }
+      }
+      .tag {
+        border-radius: 2px;
+        display: inline-block;
+        font-size: 16px;
+        color: #ffd579;
+        border: solid 1px #ffd579;
+        padding: 5px 6px;
+      }
+    }
+
+  }
 }
 
 .listContent {
@@ -397,7 +491,6 @@ html, body {
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 2;
-
       }
     }
 

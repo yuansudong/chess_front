@@ -25,7 +25,8 @@
           border-radius: 3px; }
 
 .com_title {
-  height: 28px; }
+  height: 28px;
+  margin: 20px 0 10px 0; }
   .com_title .before {
     background-color: #f7c049;
     width: 4px;
