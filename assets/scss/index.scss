@@ -122,4 +122,56 @@ html, body {
     left: 20px;
     top: 20px;
   }
+  .score {
+    color: $white;
+    position: absolute;
+    right: 22px;
+    bottom: 12px;
+    span:first-child {
+      font-size: 14px;
+      vertical-align: middle;
+    }
+    span:last-child {
+      font-size: 16px;
+      font-weight: 700;
+      vertical-align: middle;
+    }
+  }
+}
+
+.listContent {
+  width: 685px;
+  padding: 0 10px;
+  color: #999999;
+  background-color: $white;
+  height: 500px;
+  // 标题
+  .title {
+    position: relative;
+    .selectAd {
+      .title {
+        padding: 4px 10px;
+        border-radius: 2px;
+        background-color: #fff0cf;
+        color: #ffd270;
+      }
+    }
+    .theSelect {
+      position: absolute;
+      background-color: $white;
+      top: 35px;
+      right: 0;
+      padding: 22px 0;
+      border: solid 1px #c2c2c2;
+      border-radius: 7px;
+      li {
+        padding: 0 15px;
+        margin-bottom: 18px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
 }

@@ -98,3 +98,44 @@ html, body {
     position: absolute;
     left: 20px;
     top: 20px; }
+  .banner .score {
+    color: #fff;
+    position: absolute;
+    right: 22px;
+    bottom: 12px; }
+    .banner .score span:first-child {
+      font-size: 14px;
+      vertical-align: middle; }
+    .banner .score span:last-child {
+      font-size: 16px;
+      font-weight: 700;
+      vertical-align: middle; }
+
+.listContent {
+  width: 685px;
+  padding: 0 10px;
+  color: #999999;
+  background-color: #fff;
+  height: 500px; }
+  .listContent .title {
+    position: relative; }
+    .listContent .title .selectAd .title {
+      padding: 4px 10px;
+      -webkit-border-radius: 2px;
+              border-radius: 2px;
+      background-color: #fff0cf;
+      color: #ffd270; }
+    .listContent .title .theSelect {
+      position: absolute;
+      background-color: #fff;
+      top: 35px;
+      right: 0;
+      padding: 22px 0;
+      border: solid 1px #c2c2c2;
+      -webkit-border-radius: 7px;
+              border-radius: 7px; }
+      .listContent .title .theSelect li {
+        padding: 0 15px;
+        margin-bottom: 18px; }
+        .listContent .title .theSelect li:last-child {
+          margin-bottom: 0; }
