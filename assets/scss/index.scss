@@ -100,9 +100,11 @@ html, body {
     margin-top: 10px;
     border-radius: 50%;
     background-image: $white;
-    .okLogin{
+
+    .okLogin {
       border: 2px solid $white;
     }
+
     img {
       width: 58px;
       height: 58px;
@@ -122,15 +124,18 @@ html, body {
     left: 20px;
     top: 20px;
   }
+
   .score {
     color: $white;
     position: absolute;
     right: 22px;
     bottom: 12px;
+
     span:first-child {
       font-size: 14px;
       vertical-align: middle;
     }
+
     span:last-child {
       font-size: 16px;
       font-weight: 700;
@@ -141,22 +146,32 @@ html, body {
 
 .listContent {
   width: 685px;
-  padding: 0 10px;
   color: #999999;
   background-color: $white;
   height: 500px;
   // 标题
   .title {
     position: relative;
+    padding: 10px;
+
     .selectAd {
+      transition: 0.4s all;
+
       .title {
-        padding: 4px 10px;
+        padding: 0 10px;
         border-radius: 2px;
         background-color: #fff0cf;
         color: #ffd270;
       }
+
+      .activeClass {
+        display: inline-block;
+        transform: rotate(180deg);
+      }
     }
+
     .theSelect {
+      transition: 1s all;
       position: absolute;
       background-color: $white;
       top: 35px;
@@ -164,12 +179,61 @@ html, body {
       padding: 22px 0;
       border: solid 1px #c2c2c2;
       border-radius: 7px;
+      opacity: 0;
+
       li {
         padding: 0 15px;
         margin-bottom: 18px;
+
         &:last-child {
           margin-bottom: 0;
         }
+      }
+
+      &.activeClass {
+        opacity: 1;
+      }
+    }
+
+    .childTitle {
+      line-height: 22px;
+    }
+  }
+
+  // 评分
+  .commentsText {
+    padding: 7px 10px;
+
+    .portrait {
+      margin: 10px 10px 0 0;
+    }
+
+    .textContent {
+      width: 400px;
+
+      p:first-child {
+        font-size: 22px;
+        font-weight: 700;
+        color: $orange;
+      }
+
+      p:last-child {
+        font-size: 14px;
+        font-weight: 500;
+        color: #999999;
+      }
+    }
+
+    .leaveMsg {
+      margin-top: 20px;
+      font-size: 14px;
+      color: $orange;
+      padding-right: 15px;
+      text-align: right;
+
+      span {
+        font-size: 16px;
+        font-weight: 900;
       }
     }
   }

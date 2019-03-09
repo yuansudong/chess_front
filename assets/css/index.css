@@ -113,19 +113,31 @@ html, body {
 
 .listContent {
   width: 685px;
-  padding: 0 10px;
   color: #999999;
   background-color: #fff;
   height: 500px; }
   .listContent .title {
-    position: relative; }
-    .listContent .title .selectAd .title {
-      padding: 4px 10px;
-      -webkit-border-radius: 2px;
-              border-radius: 2px;
-      background-color: #fff0cf;
-      color: #ffd270; }
+    position: relative;
+    padding: 10px; }
+    .listContent .title .selectAd {
+      -webkit-transition: 0.4s all;
+      -o-transition: 0.4s all;
+      transition: 0.4s all; }
+      .listContent .title .selectAd .title {
+        padding: 0 10px;
+        -webkit-border-radius: 2px;
+                border-radius: 2px;
+        background-color: #fff0cf;
+        color: #ffd270; }
+      .listContent .title .selectAd .activeClass {
+        display: inline-block;
+        -webkit-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+                transform: rotate(180deg); }
     .listContent .title .theSelect {
+      -webkit-transition: 1s all;
+      -o-transition: 1s all;
+      transition: 1s all;
       position: absolute;
       background-color: #fff;
       top: 35px;
@@ -133,9 +145,37 @@ html, body {
       padding: 22px 0;
       border: solid 1px #c2c2c2;
       -webkit-border-radius: 7px;
-              border-radius: 7px; }
+              border-radius: 7px;
+      opacity: 0; }
       .listContent .title .theSelect li {
         padding: 0 15px;
         margin-bottom: 18px; }
         .listContent .title .theSelect li:last-child {
           margin-bottom: 0; }
+      .listContent .title .theSelect.activeClass {
+        opacity: 1; }
+    .listContent .title .childTitle {
+      line-height: 22px; }
+  .listContent .commentsText {
+    padding: 7px 10px; }
+    .listContent .commentsText .portrait {
+      margin: 10px 10px 0 0; }
+    .listContent .commentsText .textContent {
+      width: 400px; }
+      .listContent .commentsText .textContent p:first-child {
+        font-size: 22px;
+        font-weight: 700;
+        color: #f79640; }
+      .listContent .commentsText .textContent p:last-child {
+        font-size: 14px;
+        font-weight: 500;
+        color: #999999; }
+    .listContent .commentsText .leaveMsg {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #f79640;
+      padding-right: 15px;
+      text-align: right; }
+      .listContent .commentsText .leaveMsg span {
+        font-size: 16px;
+        font-weight: 900; }
