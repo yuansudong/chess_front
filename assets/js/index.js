@@ -3,18 +3,22 @@ $(function () {
     $(".navList li").mouseover(function () {
         $(".navList li").removeClass("activeClass");
         $(".navList li").eq($(this).index()).addClass("activeClass");
-
     });
 
-
     // 右上角点击我们把样式加上去
-    $('.listContent li .title .selectAd .title').mouseover(function () {
+    // selectMore
+    $('.selectMore').click(function () {
+        var Index = $('.selectMore').index(this); // 当前索引
         // 三角的旋转
-        $('.listContent li .title .selectAd .title .iconfont').removeClass("activeClass");
-        $('.listContent li .title .selectAd .title .iconfont').eq($(this).index()).addClass("activeClass");
-
-        // 框的宽度
-        $('.listContent li .title .theSelect').removeClass("activeClass");
-        $('.listContent li .title .theSelect').eq($(this).index()).addClass("activeClass");
-    })
+        $('.selectMore .iconfont').removeClass("activeClass");
+        $('.theSelect').hide();
+        $('.selectMore .iconfont').eq(Index).addClass("activeClass");
+        $('.theSelect').eq(Index).show();
+        return false;
+    });
+    //  
+    $('html,body').click(function () {
+        $('.selectMore .iconfont').removeClass("activeClass");
+        $('.theSelect').hide();
+    });
 });
