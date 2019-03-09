@@ -2,6 +2,9 @@
 /*
 首页需要的样式
 */
+html, body {
+  background-color: #f2f2f2; }
+
 .topNav {
   height: 80px;
   width: 100%;
@@ -23,6 +26,8 @@
       line-height: 80px;
       text-align: center;
       float: left; }
+      .topNav .navList li a {
+        color: #fff; }
     .topNav .navList .activeClass {
       background-color: #f79640; }
   .topNav .search {
@@ -48,7 +53,8 @@
       outline: medium; }
   .topNav .message {
     position: relative;
-    margin: 24px 0 0 32px; }
+    margin: 0 30px 0 30px;
+    bottom: 24px; }
     .topNav .message i {
       color: #da9500;
       font-size: 22px; }
@@ -70,3 +76,306 @@
           -ms-transform: scale(0.7);
               transform: scale(0.7);
       font-family: Tahoma !important; }
+  .topNav .portrait {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin-top: 10px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    background-image: #fff; }
+    .topNav .portrait .okLogin {
+      border: 2px solid #fff; }
+    .topNav .portrait img {
+      width: 58px;
+      height: 58px;
+      -webkit-border-radius: 50%;
+              border-radius: 50%; }
+
+.footer {
+  margin-top: 400px;
+  height: 122px;
+  width: 100%;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-image: url("../../dest/img/footerBag.png"); }
+  .footer .left_contents {
+    width: 685px;
+    line-height: 122px; }
+  .footer .right_contents {
+    width: 328px; }
+    .footer .right_contents .text {
+      margin: 34px 24px 0 8px;
+      color: #fff;
+      font-size: 12px; }
+    .footer .right_contents .shareList {
+      margin-top: 26px; }
+      .footer .right_contents .shareList li {
+        float: left;
+        margin-right: 6px; }
+        .footer .right_contents .shareList li:last-child {
+          margin-right: 0; }
+  .footer .logo {
+    display: block;
+    margin: 34px 34px 0 0; }
+  .footer .navList li {
+    float: left;
+    margin-right: 10px; }
+    .footer .navList li a {
+      color: #fff; }
+    .footer .navList li:last-child {
+      margin-right: 0; }
+
+.banner {
+  position: relative;
+  height: 415px;
+  margin: 15px auto;
+  background-color: #528CE0; }
+  .banner .editor {
+    position: absolute;
+    left: 20px;
+    top: 20px; }
+  .banner .score {
+    color: #fff;
+    position: absolute;
+    right: 22px;
+    bottom: 12px; }
+    .banner .score span:first-child {
+      font-size: 14px;
+      vertical-align: middle; }
+    .banner .score span:last-child {
+      font-size: 16px;
+      font-weight: 700;
+      vertical-align: middle; }
+
+.left_content {
+  width: 685px; }
+
+.right_content {
+  width: 328px; }
+  .right_content .QrCodeShare {
+    padding: 12px;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    background-color: #fff; }
+    .right_content .QrCodeShare .content {
+      margin-left: 15px; }
+      .right_content .QrCodeShare .content .maxTitle {
+        font-size: 22px;
+        font-weight: 700;
+        color: #ffc039; }
+      .right_content .QrCodeShare .content .minTitle {
+        margin: 6px 0;
+        font-size: 13px;
+        color: #999999; }
+    .right_content .QrCodeShare .shareList li {
+      float: left;
+      margin-right: 6px; }
+      .right_content .QrCodeShare .shareList li:last-child {
+        margin-right: 0; }
+  .right_content .momSelect .momList {
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    padding: 10px 0;
+    background-color: #fff; }
+    .right_content .momSelect .momList li {
+      margin-bottom: 24px; }
+      .right_content .momSelect .momList li:last-child {
+        margin-bottom: 0; }
+      .right_content .momSelect .momList li:nth-child(1) .count, .right_content .momSelect .momList li:nth-child(2) .count, .right_content .momSelect .momList li:nth-child(3) .count {
+        color: #f79640; }
+    .right_content .momSelect .momList .content .count {
+      width: 45px;
+      line-height: 66px;
+      text-align: center;
+      color: #b4b4b4; }
+    .right_content .momSelect .momList .content .selectContent {
+      margin-left: 16px; }
+      .right_content .momSelect .momList .content .selectContent .name {
+        font-size: 15px;
+        color: #424242; }
+      .right_content .momSelect .momList .content .selectContent .mum, .right_content .momSelect .momList .content .selectContent .type {
+        font-size: 13px; }
+        .right_content .momSelect .momList .content .selectContent .mum .iconfont, .right_content .momSelect .momList .content .selectContent .type .iconfont {
+          margin-left: 4px; }
+  .right_content .newEvaluation .evaluationList li {
+    display: block;
+    padding: 10px 4px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    -webkit-border-radius: 3px;
+            border-radius: 3px; }
+    .right_content .newEvaluation .evaluationList li:last-child {
+      margin-bottom: 0; }
+  .right_content .newEvaluation .evaluationList .imgAndTitle {
+    margin-left: 6px; }
+    .right_content .newEvaluation .evaluationList .imgAndTitle div:first-child {
+      margin-right: 10px; }
+    .right_content .newEvaluation .evaluationList .imgAndTitle .star .iconfont {
+      font-size: 12px;
+      color: #f7c049; }
+  .right_content .newEvaluation .evaluationList .commentsText {
+    position: relative;
+    padding: 0 30px;
+    margin: 12px 0 4px 0; }
+    .right_content .newEvaluation .evaluationList .commentsText .text {
+      font-size: 14px;
+      overflow: hidden;
+      -o-text-overflow: ellipsis;
+         text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2; }
+    .right_content .newEvaluation .evaluationList .commentsText .before, .right_content .newEvaluation .evaluationList .commentsText .active {
+      position: absolute;
+      display: inline-block;
+      width: 23px;
+      height: 21px;
+      -webkit-background-size: 23px 21px;
+              background-size: 23px 21px; }
+    .right_content .newEvaluation .evaluationList .commentsText .before {
+      top: 0;
+      left: 0;
+      background-image: url("../../dest/img/leftQuotes.png"); }
+    .right_content .newEvaluation .evaluationList .commentsText .active {
+      right: 0;
+      bottom: 0;
+      background-image: url("../../dest/img/rightQuotes.png"); }
+  .right_content .newEvaluation .evaluationList .appreciates {
+    padding: 0 30px; }
+    .right_content .newEvaluation .evaluationList .appreciates .name {
+      color: #f79640;
+      font-size: 14px; }
+      .right_content .newEvaluation .evaluationList .appreciates .name:before {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 30px;
+        height: 1px;
+        margin-right: 2px;
+        background-color: #dddddd; }
+  .right_content .tags {
+    -webkit-border-radius: 3px;
+            border-radius: 3px; }
+    .right_content .tags .content {
+      background-color: #fff;
+      padding: 20px 32px; }
+      .right_content .tags .content li {
+        float: left;
+        margin-right: 9px;
+        margin-bottom: 12px; }
+        .right_content .tags .content li:last-child {
+          margin-right: 0;
+          margin-bottom: 0; }
+      .right_content .tags .content .tag {
+        -webkit-border-radius: 2px;
+                border-radius: 2px;
+        display: inline-block;
+        font-size: 16px;
+        color: #ffd579;
+        border: solid 1px #ffd579;
+        padding: 5px 6px; }
+
+.listContent {
+  width: 685px;
+  color: #999999; }
+  .listContent li {
+    display: block;
+    margin-bottom: 15px; }
+    .listContent li:last-child {
+      margin-bottom: 0; }
+    .listContent li:hover .selectAd {
+      display: block; }
+  .listContent .title {
+    position: relative;
+    padding: 10px;
+    -webkit-border-top-left-radius: 3px;
+            border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+            border-top-right-radius: 3px;
+    background-color: #fff; }
+    .listContent .title .selectAd {
+      -webkit-transition: 0.4s all;
+      -o-transition: 0.4s all;
+      transition: 0.4s all;
+      display: none; }
+      .listContent .title .selectAd .title {
+        padding: 0 10px;
+        -webkit-border-radius: 2px;
+                border-radius: 2px;
+        background-color: #fff0cf;
+        color: #ffd270; }
+      .listContent .title .selectAd .activeClass {
+        display: inline-block;
+        -webkit-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+                transform: rotate(180deg); }
+    .listContent .title .theSelect {
+      -webkit-transition: 1s all;
+      -o-transition: 1s all;
+      transition: 1s all;
+      position: absolute;
+      background-color: #fff;
+      top: 35px;
+      right: 10px;
+      padding: 22px 0;
+      border: solid 1px #c2c2c2;
+      -webkit-border-radius: 7px;
+              border-radius: 7px;
+      display: none; }
+      .listContent .title .theSelect li {
+        padding: 0 15px;
+        margin-bottom: 18px; }
+        .listContent .title .theSelect li:last-child {
+          margin-bottom: 0; }
+      .listContent .title .theSelect.activeClass {
+        display: block; }
+    .listContent .title .childTitle {
+      line-height: 22px; }
+  .listContent .commentsText {
+    padding: 7px 10px;
+    background-color: #fff;
+    -webkit-border-bottom-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+            border-bottom-right-radius: 3px; }
+    .listContent .commentsText .portrait {
+      margin: 10px 10px 0 0; }
+    .listContent .commentsText .textContent {
+      width: 400px; }
+      .listContent .commentsText .textContent p:first-child {
+        font-size: 22px;
+        font-weight: 700;
+        color: #f79640; }
+      .listContent .commentsText .textContent p:last-child {
+        font-size: 14px;
+        font-weight: 500;
+        color: #999999;
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+           text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2; }
+    .listContent .commentsText .leaveMsg {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #f79640;
+      padding-right: 15px;
+      text-align: right; }
+      .listContent .commentsText .leaveMsg span {
+        font-size: 16px;
+        font-weight: 900; }
+
+.moreNews {
+  width: 685px;
+  margin-top: 80px;
+  text-align: center; }
+  .moreNews div {
+    display: inline;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    color: #fff;
+    padding: 10px 24px;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #f79640; }

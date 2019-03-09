@@ -3,6 +3,11 @@ $orange: #f79640;
 /*
 首页需要的样式
 */
+html, body {
+  background-color: #f2f2f2;
+}
+
+// 头部
 .topNav {
   height: 80px;
   width: 100%;
@@ -19,6 +24,10 @@ $orange: #f79640;
     color: $white;
 
     li {
+      a {
+        color: $white;
+      }
+
       transition: 0.4s all;
       width: 100px;
       height: 80px;
@@ -62,12 +71,15 @@ $orange: #f79640;
   // 消息
   .message {
     position: relative;
-    margin: 24px 0 0 32px;
+    margin: 0 30px 0 30px;
+    bottom: 24px;
+
     i {
       color: #da9500;
       font-size: 22px;
     }
-    .icon-car-count{
+
+    .icon-car-count {
       position: absolute;
       top: -6px;
       right: -8px;
@@ -81,7 +93,436 @@ $orange: #f79640;
       padding: 6px;
       font-size: 14px;
       transform: scale(.7);
-      font-family: Tahoma!important;
+      font-family: Tahoma !important;
+    }
+  }
+
+  // 头像
+  .portrait {
+    //width: 62px;
+    //height: 62px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    border-radius: 50%;
+    background-image: $white;
+
+    .okLogin {
+      border: 2px solid $white;
+    }
+
+    img {
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
     }
   }
 }
+
+// 尾部
+.footer {
+  margin-top: 400px;
+  height: 122px;
+  width: 100%;
+  background-size: cover;
+  background-image: url("../../dest/img/footerBag.png");
+
+  .left_contents {
+    width: 685px;
+    line-height: 122px;
+  }
+
+  .right_contents {
+    width: 328px;
+
+    .text {
+      margin: 34px 24px 0 8px;
+      color: $white;
+      font-size: 12px;
+    }
+
+    // 分享列表
+    .shareList {
+      margin-top: 26px;
+
+      li {
+        float: left;
+        margin-right: 6px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .logo {
+    display: block;
+    margin: 34px 34px 0 0;
+  }
+
+  .navList {
+    li {
+      a {
+        color: $white;
+      }
+
+      float: left;
+      margin-right: 10px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+  }
+}
+
+.banner {
+  position: relative;
+  height: 415px;
+  margin: 15px auto;
+  background-color: #528CE0;
+  // 编辑推荐
+  .editor {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+  }
+
+  .score {
+    color: $white;
+    position: absolute;
+    right: 22px;
+    bottom: 12px;
+
+    span:first-child {
+      font-size: 14px;
+      vertical-align: middle;
+    }
+
+    span:last-child {
+      font-size: 16px;
+      font-weight: 700;
+      vertical-align: middle;
+    }
+  }
+}
+
+.left_content {
+  width: 685px;
+}
+
+.right_content {
+  width: 328px;
+  // 二维码及分享
+  .QrCodeShare {
+    padding: 12px;
+    border-radius: 3px;
+    background-color: $white;
+    // 内容
+    .content {
+      margin-left: 15px;
+
+      .maxTitle {
+        font-size: 22px;
+        font-weight: 700;
+        color: #ffc039;
+      }
+
+      .minTitle {
+        margin: 6px 0;
+        font-size: 13px;
+        color: #999999;
+      }
+    }
+
+    // 分享列表
+    .shareList {
+      li {
+        float: left;
+        margin-right: 6px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  // 妈妈精选
+  .momSelect {
+    .momList {
+      border-radius: 3px;
+      padding: 10px 0;
+      background-color: $white;
+      li {
+        margin-bottom: 24px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        &:nth-child(1),&:nth-child(2),&:nth-child(3) {
+          .count {
+            color: $orange;
+          }
+        }
+      }
+      .content {
+        .count {
+          width: 45px;
+          line-height: 66px;
+          text-align: center;
+          color: #b4b4b4;
+        }
+        .selectContent {
+          margin-left: 16px;
+          .name {
+            font-size: 15px;
+            color: #424242;
+          }
+          .mum,.type {
+            .iconfont {
+              margin-left: 4px;
+            }
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+  // 最新评价
+  .newEvaluation {
+    .evaluationList {
+      li {
+        display: block;
+        padding: 10px 4px;
+        background-color: $white;
+        margin-bottom: 10px;
+        border-radius: 3px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      // 图片和标题
+      .imgAndTitle {
+        margin-left: 6px;
+        div:first-child {
+          margin-right: 10px;
+        }
+        .star{
+          .iconfont {
+            font-size: 12px;
+            color: #f7c049;
+          }
+        }
+      }
+      // 评论留言
+      .commentsText {
+        position: relative;
+        padding: 0 30px;
+        margin: 12px 0 4px 0;
+        .text {
+          font-size: 14px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+        }
+        .before,.active {
+          position: absolute;
+          display: inline-block;
+          width: 23px;
+          height: 21px;
+          background-size: 23px 21px;
+        }
+        .before {
+          top: 0;
+          left: 0;
+          background-image: url("../../dest/img/leftQuotes.png");
+        }
+        .active {
+          right: 0;
+          bottom: 0;
+          background-image: url("../../dest/img/rightQuotes.png");
+        }
+      }
+      // 赞赏
+      .appreciates {
+        padding: 0 30px;
+        .name {
+          &:before {
+            content: "";
+            display: inline-block;
+            vertical-align: middle;
+            width: 30px;
+            height: 1px;
+            margin-right: 2px;
+            background-color: #dddddd;
+          }
+          color: $orange;
+          font-size: 14px;
+        }
+      }
+    }
+
+
+  }
+  // 热门标签
+  .tags {
+    border-radius: 3px;
+    .content {
+      background-color: $white;
+      padding: 20px 32px;
+      li {
+        float: left;
+        margin-right: 9px;
+        margin-bottom: 12px;
+        &:last-child {
+          margin-right: 0;
+          margin-bottom: 0;
+        }
+      }
+      .tag {
+        border-radius: 2px;
+        display: inline-block;
+        font-size: 16px;
+        color: #ffd579;
+        border: solid 1px #ffd579;
+        padding: 5px 6px;
+      }
+    }
+
+  }
+}
+
+.listContent {
+  width: 685px;
+  color: #999999;
+  li {
+    display: block;
+    margin-bottom: 15px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:hover .selectAd {
+      display: block;
+    }
+  }
+
+  // 标题
+  .title {
+    position: relative;
+    padding: 10px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-color: $white;
+    .selectAd {
+      transition: 0.4s all;
+      display: none;
+
+      .title {
+        padding: 0 10px;
+        border-radius: 2px;
+        background-color: #fff0cf;
+        color: #ffd270;
+      }
+
+      .activeClass {
+        display: inline-block;
+        transform: rotate(180deg);
+      }
+    }
+
+    .theSelect {
+      transition: 1s all;
+      position: absolute;
+      background-color: $white;
+      top: 35px;
+      right: 10px;
+      padding: 22px 0;
+      border: solid 1px #c2c2c2;
+      border-radius: 7px;
+      display: none;
+
+      li {
+        padding: 0 15px;
+        margin-bottom: 18px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      &.activeClass {
+        display: block;
+      }
+    }
+
+    .childTitle {
+      line-height: 22px;
+    }
+  }
+
+  // 评分
+  .commentsText {
+    padding: 7px 10px;
+    background-color: $white;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    .portrait {
+      margin: 10px 10px 0 0;
+    }
+
+    .textContent {
+      width: 400px;
+
+      p:first-child {
+        font-size: 22px;
+        font-weight: 700;
+        color: $orange;
+      }
+
+      p:last-child {
+        font-size: 14px;
+        font-weight: 500;
+        color: #999999;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+      }
+    }
+
+    .leaveMsg {
+      margin-top: 20px;
+      font-size: 14px;
+      color: $orange;
+      padding-right: 15px;
+      text-align: right;
+
+      span {
+        font-size: 16px;
+        font-weight: 900;
+      }
+    }
+  }
+
+}
+
+.moreNews {
+  width: 685px;
+  margin-top: 80px;
+  text-align: center;
+
+  div {
+    display: inline;
+    border-radius: 5px;
+    color: $white;
+    padding: 10px 24px;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: $orange;
+  }
+}
+
