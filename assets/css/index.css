@@ -1,0 +1,16 @@
+@charset "UTF-8";
+/*
+首页需要的样式
+*/
+.topNav {
+  height: 80px;
+  width: 100%;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-image: url("../../dest/img/topBag.png"); }
+  .topNav .logo {
+    padding: 20px 0 20px 22px; }
+  .topNav .navList {
+    font-size: 18px;
+    color: #fff;
+    float: left; }
