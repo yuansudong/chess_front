@@ -11,9 +11,8 @@ html, body {
 .topNav {
   height: 80px;
   width: 100%;
-  background-size: cover;
+  background-size: 100% 100%;
   background-image: url("../../dest/img/topBag.png");
-
   .logo {
     padding: 20px 0 20px 22px;
   }
@@ -120,10 +119,10 @@ html, body {
 
 // 尾部
 .footer {
-  margin-top: 400px;
+  margin-top: 170px;
   height: 122px;
   width: 100%;
-  background-size: cover;
+  background-size: 100% 100%;
   background-image: url("../../dest/img/footerBag.png");
 
   .left_contents {
@@ -373,6 +372,7 @@ html, body {
       background-color: $white;
       padding: 20px 32px;
       li {
+        cursor: pointer;
         float: left;
         margin-right: 9px;
         margin-bottom: 12px;

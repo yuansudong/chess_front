@@ -8,8 +8,8 @@ html, body {
 .topNav {
   height: 80px;
   width: 100%;
-  -webkit-background-size: cover;
-          background-size: cover;
+  -webkit-background-size: 100% 100%;
+          background-size: 100% 100%;
   background-image: url("../../dest/img/topBag.png"); }
   .topNav .logo {
     padding: 20px 0 20px 22px; }
@@ -92,11 +92,11 @@ html, body {
               border-radius: 50%; }
 
 .footer {
-  margin-top: 400px;
+  margin-top: 170px;
   height: 122px;
   width: 100%;
-  -webkit-background-size: cover;
-          background-size: cover;
+  -webkit-background-size: 100% 100%;
+          background-size: 100% 100%;
   background-image: url("../../dest/img/footerBag.png"); }
   .footer .left_contents {
     width: 685px;
@@ -260,6 +260,7 @@ html, body {
       background-color: #fff;
       padding: 20px 32px; }
       .right_content .tags .content li {
+        cursor: pointer;
         float: left;
         margin-right: 9px;
         margin-bottom: 12px; }
