@@ -13,6 +13,7 @@ html, body {
   width: 100%;
   background-size: 100% 100%;
   background-image: url("../../dest/img/topBag.png");
+
   .logo {
     padding: 20px 0 20px 22px;
   }
@@ -37,33 +38,6 @@ html, body {
 
     .activeClass {
       background-color: $orange;
-    }
-  }
-
-  // 搜索
-  .search {
-    position: relative;
-    width: 146px;
-    height: 30px;
-    margin-top: 24px;
-    margin-left: 40px;
-
-    .icon-Magnifier {
-      position: absolute;
-      top: 5px;
-      left: 10px;
-      font-size: 20px;
-      color: $orange;
-      font-weight: 600;
-    }
-
-    input[type="text"] {
-      width: 106px;
-      padding-left: 40px;
-      border-radius: 14px;
-      border: none;
-      height: 30px;
-      outline: medium;
     }
   }
 
@@ -176,6 +150,115 @@ html, body {
   }
 }
 
+
+// 搜索
+.search {
+  position: relative;
+  width: 146px;
+  height: 30px;
+  margin-top: 24px;
+  margin-left: 40px;
+  font-size: 14px;
+  // 搜索输入框
+  .searchInput {
+    .icon-Magnifier {
+      position: absolute;
+      top: 5px;
+      left: 10px;
+      font-size: 20px;
+      color: $orange;
+      font-weight: 600;
+    }
+
+    input[type="text"] {
+      width: 106px;
+      padding-left: 40px;
+      padding-right: 17px;
+      border-radius: 14px;
+      border: none;
+      height: 30px;
+      outline: medium;
+    }
+  }
+
+  // 历史记录
+  .history {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    z-index: 100;
+    min-width: 146px;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px 1px rgba(0, 0, 0, .2);
+    overflow: hidden;
+    li.activeClass {
+      .after {
+        display: none;
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        top: 7px;
+        content: "\e619";
+        color: #999999;
+      }
+    }
+
+    li {
+      position: relative;
+
+      &:hover {
+        .after {
+          display: block;
+        }
+
+        background-color: #f2f2f5;
+
+        a {
+          color: #ff0000;
+        }
+      }
+
+      a {
+        color: #666;
+        outline: 0;
+        padding: 9px 22px 9px 13px;
+        line-height: 12px;
+        display: block;
+        white-space: nowrap;
+
+      }
+    }
+  }
+
+  // 模糊搜索
+  .dimSearch {
+    position: absolute;
+    top: 36px;
+    left: 0;
+    min-width: 146px;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 8px 1px rgba(0, 0, 0, .2);
+    z-index: 200;
+    display: none;
+    li {
+      &:hover {
+        transition: 0.4s all;
+        background-color: #dddddf;
+      }
+      cursor: pointer;
+      span {
+        display: block;
+        padding: 5px;
+      }
+    }
+  }
+
+}
+
+
 .banner {
   position: relative;
   height: 415px;
@@ -247,23 +330,28 @@ html, body {
       }
     }
   }
+
   // 妈妈精选
   .momSelect {
     .momList {
       border-radius: 3px;
       padding: 10px 0;
       background-color: $white;
+
       li {
         margin-bottom: 24px;
+
         &:last-child {
           margin-bottom: 0;
         }
-        &:nth-child(1),&:nth-child(2),&:nth-child(3) {
+
+        &:nth-child(1), &:nth-child(2), &:nth-child(3) {
           .count {
             color: $orange;
           }
         }
       }
+
       .content {
         .count {
           width: 45px;
@@ -271,22 +359,27 @@ html, body {
           text-align: center;
           color: #b4b4b4;
         }
+
         .selectContent {
           margin-left: 16px;
+
           .name {
             font-size: 15px;
             color: #424242;
           }
-          .mum,.type {
+
+          .mum, .type {
             .iconfont {
               margin-left: 4px;
             }
+
             font-size: 13px;
           }
         }
       }
     }
   }
+
   // 最新评价
   .newEvaluation {
     .evaluationList {
@@ -296,28 +389,34 @@ html, body {
         background-color: $white;
         margin-bottom: 10px;
         border-radius: 3px;
+
         &:last-child {
           margin-bottom: 0;
         }
       }
+
       // 图片和标题
       .imgAndTitle {
         margin-left: 6px;
+
         div:first-child {
           margin-right: 10px;
         }
-        .star{
+
+        .star {
           .iconfont {
             font-size: 12px;
             color: #f7c049;
           }
         }
       }
+
       // 评论留言
       .commentsText {
         position: relative;
         padding: 0 30px;
         margin: 12px 0 4px 0;
+
         .text {
           font-size: 14px;
           overflow: hidden;
@@ -326,27 +425,32 @@ html, body {
           -webkit-box-orient: vertical;
           -webkit-line-clamp: 2;
         }
-        .before,.active {
+
+        .before, .active {
           position: absolute;
           display: inline-block;
           width: 23px;
           height: 21px;
           background-size: 23px 21px;
         }
+
         .before {
           top: 0;
           left: 0;
           background-image: url("../../dest/img/leftQuotes.png");
         }
+
         .active {
           right: 0;
           bottom: 0;
           background-image: url("../../dest/img/rightQuotes.png");
         }
       }
+
       // 赞赏
       .appreciates {
         padding: 0 30px;
+
         .name {
           &:before {
             content: "";
@@ -357,6 +461,7 @@ html, body {
             margin-right: 2px;
             background-color: #dddddd;
           }
+
           color: $orange;
           font-size: 14px;
         }
@@ -365,22 +470,27 @@ html, body {
 
 
   }
+
   // 热门标签
   .tags {
     border-radius: 3px;
+
     .content {
       background-color: $white;
       padding: 20px 32px;
+
       li {
         cursor: pointer;
         float: left;
         margin-right: 9px;
         margin-bottom: 12px;
+
         &:last-child {
           margin-right: 0;
           margin-bottom: 0;
         }
       }
+
       .tag {
         border-radius: 2px;
         display: inline-block;
@@ -397,9 +507,11 @@ html, body {
 .listContent {
   width: 685px;
   color: #999999;
+
   li {
     display: block;
     margin-bottom: 15px;
+
     &:last-child {
       margin-bottom: 0;
     }
@@ -416,6 +528,7 @@ html, body {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     background-color: $white;
+
     .selectAd {
       transition: 0.4s all;
       display: none;
@@ -469,6 +582,7 @@ html, body {
     background-color: $white;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
+
     .portrait {
       margin: 10px 10px 0 0;
     }

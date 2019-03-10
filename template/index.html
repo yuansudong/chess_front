@@ -28,8 +28,28 @@
 
 
         <form class="search lf">
-            <i class="iconfont icon-Magnifier"></i>
-            <input class="lineBlock" type="text" placeholder="搜索...">
+            <!--input-->
+            <div class="searchInput">
+                <i class="iconfont icon-Magnifier"></i>
+                <input id="search" class="lineBlock" type="text" placeholder="搜索...">
+            </div>
+            <!--搜索历史记录-->
+            <ul class="history">
+                <li class="activeClass">
+                    <a href="http://www.baidu.com">搜索历史记录搜索历史记录搜索</a>
+                    <!--关闭按钮-->
+                    <span class="iconfont icon-close after"></span>
+                </li>
+            </ul>
+            <!--实时模糊搜索-->
+            <ul class="dimSearch">
+                <li><span>实时模糊搜索数据1</span></li>
+                <li><span>实时模糊搜索数据2</span></li>
+                <li><span>实时模糊搜索数据3</span></li>
+                <li><span>实时模糊搜索数据4</span></li>
+                <li><span>实时模糊搜索数据5</span></li>
+                <li><span>实时模糊搜索数据6</span></li>
+            </ul>
         </form>
 
         <div class="message lineBlock">

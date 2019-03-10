@@ -30,27 +30,6 @@ html, body {
         color: #fff; }
     .topNav .navList .activeClass {
       background-color: #f79640; }
-  .topNav .search {
-    position: relative;
-    width: 146px;
-    height: 30px;
-    margin-top: 24px;
-    margin-left: 40px; }
-    .topNav .search .icon-Magnifier {
-      position: absolute;
-      top: 5px;
-      left: 10px;
-      font-size: 20px;
-      color: #f79640;
-      font-weight: 600; }
-    .topNav .search input[type="text"] {
-      width: 106px;
-      padding-left: 40px;
-      -webkit-border-radius: 14px;
-              border-radius: 14px;
-      border: none;
-      height: 30px;
-      outline: medium; }
   .topNav .message {
     position: relative;
     margin: 0 30px 0 30px;
@@ -124,6 +103,88 @@ html, body {
       color: #fff; }
     .footer .navList li:last-child {
       margin-right: 0; }
+
+.search {
+  position: relative;
+  width: 146px;
+  height: 30px;
+  margin-top: 24px;
+  margin-left: 40px;
+  font-size: 14px; }
+  .search .searchInput .icon-Magnifier {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    font-size: 20px;
+    color: #f79640;
+    font-weight: 600; }
+  .search .searchInput input[type="text"] {
+    width: 106px;
+    padding-left: 40px;
+    padding-right: 17px;
+    -webkit-border-radius: 14px;
+            border-radius: 14px;
+    border: none;
+    height: 30px;
+    outline: medium; }
+  .search .history {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    z-index: 100;
+    min-width: 146px;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 2px 8px 1px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 8px 1px rgba(0, 0, 0, 0.2);
+    overflow: hidden; }
+    .search .history li.activeClass .after {
+      display: none;
+      cursor: pointer;
+      position: absolute;
+      right: 0;
+      top: 7px;
+      content: "\e619";
+      color: #999999; }
+    .search .history li {
+      position: relative; }
+      .search .history li:hover {
+        background-color: #f2f2f5; }
+        .search .history li:hover .after {
+          display: block; }
+        .search .history li:hover a {
+          color: #ff0000; }
+      .search .history li a {
+        color: #666;
+        outline: 0;
+        padding: 9px 22px 9px 13px;
+        line-height: 12px;
+        display: block;
+        white-space: nowrap; }
+  .search .dimSearch {
+    position: absolute;
+    top: 36px;
+    left: 0;
+    min-width: 146px;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    overflow: hidden;
+    background-color: #fff;
+    -webkit-box-shadow: 0 2px 8px 1px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 8px 1px rgba(0, 0, 0, 0.2);
+    z-index: 200;
+    display: none; }
+    .search .dimSearch li {
+      cursor: pointer; }
+      .search .dimSearch li:hover {
+        -webkit-transition: 0.4s all;
+        -o-transition: 0.4s all;
+        transition: 0.4s all;
+        background-color: #dddddf; }
+      .search .dimSearch li span {
+        display: block;
+        padding: 5px; }
 
 .banner {
   position: relative;
