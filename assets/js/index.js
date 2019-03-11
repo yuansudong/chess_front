@@ -18,10 +18,10 @@ $(function () {
     });
 
 
-    $('html,body').click(function () {
-        $('.selectMore .iconfont').removeClass("activeClass");
-        $('.theSelect').hide();
-    });
+    // $('html,body').click(function () {
+    //     $('.selectMore .iconfont').removeClass("activeClass");
+    //     $('.theSelect').hide();
+    // });
 
     // close关闭当前行。
     $('.history li .icon-close.after').click(function () {
@@ -33,6 +33,7 @@ $(function () {
         var text = $(this).find('span').text(); // 获取当前的文本值
         // 把文本值放到搜索框上
         $('#search').val(text);
+        // 这里要发送个请求给后端，获取到数据
         // 并且关闭框
         $('.dimSearch').hide();
     })
@@ -54,11 +55,31 @@ $(function () {
         }
     }
 
-    $("#search").keydown(function(e) {
-        if (e.keyCode == 13) {
-            console.log($("#search").val());
-            return
+    // 输入框回车事件
+    $('#search').on('keypress', function(event) {
+        if (event.keyCode === 13) {
+            // 发送事件
+            FuzzyQuery()
         }
     });
 
+    $('#searchIcont').click(function () {
+        FuzzyQuery();
+    });
+
+    function FuzzyQuery() {
+        var v = $('#search').val();
+        console.log(v);
+    }
+
+    $(document).ready(function(e) {
+        //myApi1.JSON.lagout(v1,v2,v3)，
+        //v1,v2,v3是三个参数，其中
+        //v1是最外层的div
+        //v2是轮播图的播放速度，以毫秒为单位
+        //v3轮播图的最外层高与图片的高度差（控制点在图片外时，与图片的距离）
+        var myApi1 = new Myapi();
+        myApi1.JSON.lagout($('#banner'),2000,0);
+
+    });
 });

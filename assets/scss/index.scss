@@ -14,6 +14,10 @@ html, body {
   background-size: 100% 100%;
   background-image: url("../../dest/img/topBag.png");
 
+  .nav {
+    background-image: url("../../dest/img/topBag.png");
+  }
+
   .logo {
     padding: 20px 0 20px 22px;
   }
@@ -98,6 +102,10 @@ html, body {
   width: 100%;
   background-size: 100% 100%;
   background-image: url("../../dest/img/footerBag.png");
+
+  .footerContent {
+    background-image: url("../../dest/img/footerBag.png");
+  }
 
   .left_contents {
     width: 685px;
@@ -192,6 +200,7 @@ html, body {
     background-color: #fff;
     box-shadow: 0 2px 8px 1px rgba(0, 0, 0, .2);
     overflow: hidden;
+
     li.activeClass {
       .after {
         display: none;
@@ -243,12 +252,15 @@ html, body {
     box-shadow: 0 2px 8px 1px rgba(0, 0, 0, .2);
     z-index: 200;
     display: none;
+
     li {
       &:hover {
         transition: 0.4s all;
         background-color: #dddddf;
       }
+
       cursor: pointer;
+
       span {
         display: block;
         padding: 5px;
@@ -264,6 +276,28 @@ html, body {
   height: 415px;
   margin: 15px auto;
   background-color: #528CE0;
+
+  .bannerContent {
+    position: relative;
+    width: 1043px;
+    overflow: hidden;
+
+    .img {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+
+  li {
+    float: left;
+
+    img {
+      border: 0;
+      display: block;
+    }
+  }
+
   // 编辑推荐
   .editor {
     position: absolute;
@@ -640,3 +674,87 @@ html, body {
   }
 }
 
+
+.pointer {
+  height: 4px;
+  position: absolute;
+  bottom: 16px;
+}
+
+.pointer li {
+  width: 42px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+  float: left;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.pointer li.now {
+  height: 4px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.cut {
+  background: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  font-family: '宋体';
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  opacity: 0.2;
+}
+
+.J_banner {
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto 10px;
+}
+
+.J_banner .img {
+  width: 2000px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.J_banner .img li {
+  float: left;
+  position: relative;
+}
+
+.J_banner1 .pointer {
+  width: 100px;
+  height: 15px;
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+}
+
+.J_banner1 .pointer li {
+  width: 15px;
+  height: 15px;
+  background: #d0d0d0;
+  border-radius: 50%;
+  margin: 0 5px;
+  float: left;
+}
+
+.J_banner1 .pointer li.now {
+  background: #fff;
+}
+
+.J_banner .cut {
+  width: 34px;
+  height: 58px;
+  left: 20px;
+  font-size: 18px;
+  line-height: 58px;
+}
+
+.J_banner .cut.next {
+  left: auto;
+  right: 20px;
+}

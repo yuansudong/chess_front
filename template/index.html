@@ -12,7 +12,7 @@
 
 <!--头部-->
 <nav class="topNav">
-    <div class="container clearfix">
+    <div class="container clearfix  nav">
         <div class="logo lineBlock lf">
             <a href="http://www.baidu.com">
                 <img src="../dest/img/logo.png" alt="加载失败">
@@ -27,11 +27,11 @@
         </ul>
 
 
-        <form class="search lf">
+        <form class="search lf"  onsubmit="return false;">
             <!--input-->
             <div class="searchInput">
-                <i class="iconfont icon-Magnifier"></i>
-                <input id="search" class="lineBlock" type="text" placeholder="搜索...">
+                <i id="searchIcont" class="iconfont icon-Magnifier"></i>
+                <input id="search" class="lineBlock" autocomplete="off" type="text" placeholder="搜索...">
             </div>
             <!--搜索历史记录-->
             <ul class="history">
@@ -68,8 +68,18 @@
 <div class="banner container">
     <h4 class="editor white">编辑推荐</h4>
     <!--轮播-->
-    <div>
-        <a href="http://www.baidu.com"><img width="1043px" height="415px" src="../dest/img/timg.jpeg" alt=""></a>
+    <div id="banner" class="bannerContent  J_banner J_banner2">
+        <ul class="img">
+            <li>
+                <a href="http://www.baidu.com"><img width="1043px" height="415px" src="../dest/img/timg.jpeg" alt=""></a>
+            </li>
+            <li>
+                <a href="http://www.baidu.com"><img width="1043px" height="415px" src="../dest/img/banner.png" alt=""></a>
+            </li>
+        </ul>
+        <ul class="pointer"></ul><!-- 点 -->
+        <a class="cut prev"><</a>
+        <a class="cut next">></a>
     </div>
     <!--评分-->
     <div class="score">
@@ -484,7 +494,7 @@
 <div class="both"></div>
 <!--页面-->
 <div class="footer">
-    <div class="container clearfix">
+    <div class="container clearfix footerContent">
         <div class="left_contents lf">
             <div class="logo lineBlock lf">
                 <a href="http://www.baidu.com">
@@ -514,6 +524,8 @@
 
 
 </body>
-<script src="http://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
 <script src="../dest/js/index.min.js"></script>
+<script src="../assets/js/Myapi.js"></script>
+<!--<script src="../dest/js/Myapi.min.js"></script>-->
 </html>
