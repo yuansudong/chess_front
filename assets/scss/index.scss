@@ -301,6 +301,7 @@ html, body {
   // 编辑推荐
   .editor {
     position: absolute;
+    z-index: 999;
     left: 20px;
     top: 20px;
   }
@@ -308,6 +309,7 @@ html, body {
   .score {
     color: $white;
     position: absolute;
+    z-index: 999;
     right: 22px;
     bottom: 12px;
 
@@ -757,4 +759,13 @@ html, body {
 .J_banner .cut.next {
   left: auto;
   right: 20px;
+}
+
+
+// 返回顶部
+.returnTop {
+  cursor: pointer;
+  position: fixed;
+  right: 50px;
+  bottom: 70px;
 }

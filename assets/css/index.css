@@ -210,11 +210,13 @@ html, body {
       display: block; }
   .banner .editor {
     position: absolute;
+    z-index: 999;
     left: 20px;
     top: 20px; }
   .banner .score {
     color: #fff;
     position: absolute;
+    z-index: 999;
     right: 22px;
     bottom: 12px; }
     .banner .score span:first-child {
@@ -531,3 +533,9 @@ html, body {
 .J_banner .cut.next {
   left: auto;
   right: 20px; }
+
+.returnTop {
+  cursor: pointer;
+  position: fixed;
+  right: 50px;
+  bottom: 70px; }

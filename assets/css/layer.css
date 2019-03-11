@@ -1,0 +1,14 @@
+.layui-m-layershade {
+  background-color: rgba(0, 0, 0, 0.7);
+  pointer-events: auto;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1222; }
+  .layui-m-layershade .layui-m-layersection {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1333; }
