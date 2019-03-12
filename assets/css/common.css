@@ -14,6 +14,12 @@
 .rg {
   float: right; }
 
+.overflowHidden {
+  overflow: hidden; }
+
+.hide {
+  display: none; }
+
 .white {
   color: #ffffff; }
 
