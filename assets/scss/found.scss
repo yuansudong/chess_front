@@ -1,0 +1,22 @@
+$white: #ffffff;
+$orange: #f7c049;
+// 发现页面的
+.tagsList {
+  width: 1024px;
+  margin: 0 auto;
+  li {
+    float: left;
+    margin-right: 22px;
+    padding: 5px 12px;
+    font-size: 18px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: $orange;
+    &:last-child {
+      margin-right: 0;
+    }
+    a {
+      color: $white;
+    }
+  }
+}
