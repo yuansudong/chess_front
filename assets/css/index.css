@@ -143,6 +143,12 @@ html, body {
     -webkit-box-shadow: 0 2px 8px 1px rgba(0, 0, 0, 0.2);
             box-shadow: 0 2px 8px 1px rgba(0, 0, 0, 0.2);
     overflow: hidden; }
+    .search .history .clearLog {
+      background-color: #f2f2f5;
+      padding: 4px 22px 4px 0;
+      color: #1353ff;
+      font-size: 13px;
+      text-align: right; }
     .search .history li.activeClass .after {
       display: none;
       cursor: pointer;
@@ -379,6 +385,8 @@ html, body {
       -o-transition: 0.4s all;
       transition: 0.4s all;
       display: none; }
+      .listContent .title .selectAd.activeClass {
+        display: block; }
       .listContent .title .selectAd .title {
         padding: 0 10px;
         -webkit-border-radius: 2px;
@@ -398,14 +406,19 @@ html, body {
       background-color: #fff;
       top: 35px;
       right: 10px;
-      padding: 22px 0;
+      padding: 18px 0;
       border: solid 1px #c2c2c2;
       -webkit-border-radius: 7px;
               border-radius: 7px;
       display: none; }
       .listContent .title .theSelect li {
-        padding: 0 15px;
+        padding: 4px 15px;
         margin-bottom: 18px; }
+        .listContent .title .theSelect li:hover {
+          cursor: pointer;
+          background-color: rgba(255, 255, 255, 0.4);
+          background-color: #dddddf;
+          color: red; }
         .listContent .title .theSelect li:last-child {
           margin-bottom: 0; }
       .listContent .title .theSelect.activeClass {

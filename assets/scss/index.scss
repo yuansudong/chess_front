@@ -200,6 +200,14 @@ html, body {
     background-color: #fff;
     box-shadow: 0 2px 8px 1px rgba(0, 0, 0, .2);
     overflow: hidden;
+    // 清除历史记录
+    .clearLog {
+      background-color: #f2f2f5;
+      padding: 4px 22px 4px 0;
+      color: #1353ff;
+      font-size: 13px;
+      text-align: right;
+    }
 
     li.activeClass {
       .after {
@@ -569,6 +577,10 @@ html, body {
       transition: 0.4s all;
       display: none;
 
+      &.activeClass {
+        display: block;
+      }
+
       .title {
         padding: 0 10px;
         border-radius: 2px;
@@ -588,14 +600,21 @@ html, body {
       background-color: $white;
       top: 35px;
       right: 10px;
-      padding: 22px 0;
+      padding: 18px 0;
       border: solid 1px #c2c2c2;
       border-radius: 7px;
       display: none;
 
       li {
-        padding: 0 15px;
+        padding: 4px 15px;
         margin-bottom: 18px;
+
+        &:hover {
+          cursor: pointer;
+          background-color: rgba(255, 255, 255, .4);
+          background-color: #dddddf;
+          color: red;
+        }
 
         &:last-child {
           margin-bottom: 0;
