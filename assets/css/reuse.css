@@ -1,0 +1,14 @@
+.location {
+  width: 100%;
+  padding: 10px 0;
+  background-color: #ffffff; }
+  .location .locationContent {
+    background-color: #ffffff;
+    color: #545454;
+    font-size: 14px; }
+    .location .locationContent a, .location .locationContent span {
+      color: #545454;
+      vertical-align: top; }
+    .location .locationContent span {
+      display: inline-block;
+      margin: 0 5px; }

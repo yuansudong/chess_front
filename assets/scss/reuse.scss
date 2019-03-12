@@ -1,0 +1,20 @@
+// 这里是多个页面使用到的css
+$white: #ffffff;
+.location {
+  width: 100%;
+  padding: 10px 0;
+  background-color: $white;
+  .locationContent {
+    background-color: $white;
+    color: #545454;
+    font-size: 14px;
+    a,span {
+      color: #545454;
+      vertical-align: top;
+    }
+    span {
+      display: inline-block;
+      margin: 0 5px;
+    }
+  }
+}
