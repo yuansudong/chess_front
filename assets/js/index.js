@@ -124,9 +124,14 @@ function SetInputLog(v) {
 // 历史记录获取方法
 function GetInputLog() {
     if (localStorage.getItem('searchValue')) {
+        $(".history").html("");
         var d = localStorage.getItem('searchValue');
         d = JSON.parse(d);
         // 把数据动态的添加到历史记录下面。
-        console.log(d)
+        for (var i = 0; i < d.length; i++) {
+            var text = d[i].key;
+            var  dom = '<li class="activeClass">'+ '<a href="http://www.baidu.com">'+ text +'</a>' + '<span class="iconfont icon-close after"></span> '+ '</li> '
+            $(".history").append(dom)
+        }
     }
 }
