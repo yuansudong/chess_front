@@ -768,8 +768,5 @@ html, body {
   position: fixed;
   right: 50px;
   bottom: 70px;
-  //height: 29px;
-  //background-image: url("../../dest/img/topBag.png");
-  //background-repeat: no-repeat;
-  //background-size: cover;
+  z-index: 3999;
 }

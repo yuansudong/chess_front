@@ -34,6 +34,7 @@ $(function () {
         // 把文本值放到搜索框上
         $('#search').val(text);
         // 这里要发送个请求给后端，获取到数据
+        // 把这里值放到sessionStorage
         // 并且关闭框
         $('.dimSearch').hide();
     })
@@ -70,8 +71,12 @@ $(function () {
 
     function FuzzyQuery() {
         var v = $('#search').val();
-        console.log(v);
+        SetInputLog(v); // 调用历史记录方法
     }
+
+    $("#search").focus(function () {
+        GetInputLog();
+    });
 
     $(document).ready(function (e) {
         //myApi1.JSON.lagout(v1,v2,v3)，
@@ -96,6 +101,32 @@ $(function () {
     });
     // 返回顶部
     $('.returnTop').click(function () {
-        $("html,body").animate({"scrollTop":0},300);
+        $("html,body").animate({"scrollTop": 0}, 300);
     })
 });
+
+// 历史记录存放方法
+function SetInputLog(v) {
+    // 接受每次输入框输入的值，把他放到sessionStorage里
+    if (!localStorage.getItem('searchValue')) {
+        var data = [];
+        data.push({key: v});
+        var datas = JSON.stringify(data);
+        localStorage.setItem('searchValue', datas);
+    } else {
+        var data = localStorage.getItem('searchValue');
+        var datas = JSON.parse(data);
+        datas.push({key: v});
+        localStorage.setItem('searchValue', JSON.stringify(datas))
+    }
+}
+
+// 历史记录获取方法
+function GetInputLog() {
+    if (localStorage.getItem('searchValue')) {
+        var d = localStorage.getItem('searchValue');
+        d = JSON.parse(d);
+        // 把数据动态的添加到历史记录下面。
+        console.log(d)
+    }
+}
