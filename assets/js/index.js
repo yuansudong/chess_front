@@ -38,15 +38,16 @@ $(function () {
         $('.dimSearch').hide();
     })
     // 输入框键盘按下事件
-    $('#search').bind("input propertychange",function(event){
+    $('#search').bind("input propertychange", function (event) {
         if (!searchText()) {
             $('.dimSearch').hide();
         } else {
             $('.dimSearch').show();
         }
     });
+
     // 输入框是否有值
-    function searchText () {
+    function searchText() {
         var realData = $("#search").val(); // 实时数据
         if (!realData || realData === '' || realData === undefined) {
             return false;
@@ -56,7 +57,7 @@ $(function () {
     }
 
     // 输入框回车事件
-    $('#search').on('keypress', function(event) {
+    $('#search').on('keypress', function (event) {
         if (event.keyCode === 13) {
             // 发送事件
             FuzzyQuery()
@@ -72,28 +73,29 @@ $(function () {
         console.log(v);
     }
 
-    $(document).ready(function(e) {
+    $(document).ready(function (e) {
         //myApi1.JSON.lagout(v1,v2,v3)，
         //v1,v2,v3是三个参数，其中
         //v1是最外层的div
         //v2是轮播图的播放速度，以毫秒为单位
         //v3轮播图的最外层高与图片的高度差（控制点在图片外时，与图片的距离）
         var myApi1 = new Myapi();
-        myApi1.JSON.lagout($('#banner'),2000,0);
+        myApi1.JSON.lagout($('#banner'), 2000, 0);
 
     });
 
-    $('#qq').click(function () {
-        //自定页
-        layer.open({
-            type: 1,
-            skin: 'layui-layer-demo', //样式类名
-            closeBtn: 0, //不显示关闭按钮
-            anim: 2,
-            shadeClose: true, //开启遮罩关闭
-            content: '内容'
-        });
+
+    // 滚动页面
+    $('body').scroll(function () {
+        var st = $(this).scrollTop();
+        if (st > 300) {
+            $('.returnTop img').show()
+        } else {
+            $('.returnTop img').hide()
+        }
+    });
+    // 返回顶部
+    $('.returnTop').click(function () {
+        $("html,body").animate({"scrollTop":0},300);
     })
-
-
 });
