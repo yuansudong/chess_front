@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>发现</title>
+    <link rel="stylesheet" href="../assets/css/init.css">
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/index.css">
+    <link rel="stylesheet" href="../assets/css/shuffling.css">
+    <link rel="stylesheet" href="../dest/css/reuse.min.css">
+    <link rel="stylesheet" href="../dest/css/found.min.css">
+    <link rel="stylesheet" href="../dest/fonts/iconfont.css">
+</head>
+<body>
+<!--头部-->
+<nav class="topNav">
+    <div class="container clearfix  nav">
+        <div class="logo lineBlock lf">
+            <a href="http://www.baidu.com">
+                <img src="../dest/img/logo.png" alt="加载失败">
+            </a>
+        </div>
+
+        <ul class="navList clearfix lf">
+            <li class="activeClass"><a href="#">首页</a></li>
+            <li><a href="#">安利墙</a></li>
+            <li><a href="#">发现</a></li>
+            <li><a href="#">论坛</a></li>
+        </ul>
+
+
+        <form class="search lf" onsubmit="return false;">
+            <!--input-->
+            <div class="searchInput">
+                <i id="searchIcont" class="iconfont icon-Magnifier"></i>
+                <input id="search" class="lineBlock" autocomplete="off" type="text" placeholder="搜索...">
+            </div>
+            <!--搜索历史记录-->
+            <ul class="history"></ul>
+            <!--实时模糊搜索-->
+            <ul class="dimSearch">
+                <li><span>实时模糊搜索数据1</span></li>
+                <li><span>实时模糊搜索数据2</span></li>
+                <li><span>实时模糊搜索数据3</span></li>
+                <li><span>实时模糊搜索数据4</span></li>
+                <li><span>实时模糊搜索数据5</span></li>
+                <li><span>实时模糊搜索数据6</span></li>
+            </ul>
+        </form>
+
+        <div class="message lineBlock">
+            <i class="iconfont icon-Pathx"></i>
+            <a href=""><span class="icon-car-count">0</span></a>
+        </div>
+        <div class="portrait lineBlock">
+            <!--无头像-->
+            <!--<a href="http://www.baidu.com"><img src="../dest/img/noLogin.png" alt="加载失败"></a>-->
+            <!--有头像-->
+            <a href="http://www.baidu.com"><img class="okLogin" src="../dest/img/okLogin.png" alt="加载失败"></a>
+        </div>
+        <div class="both"></div>
+    </div>
+</nav>
+<div class="both"></div>
+<!--位置-->
+<div class="location">
+    <div class="locationContent container">
+        你的位置:
+        <a target="_blank" href="./index.html">首页</a><span>&gt;</span><a target="_blank" href="#">发现</a>
+    </div>
+</div>
+<!--Banner-->
+<div class="banner container">
+    <h4 class="editor white">编辑推荐</h4>
+    <!--轮播-->
+    <div id="banner" class="bannerContent  J_banner J_banner2">
+        <ul class="img">
+            <li>
+                <a href="http://www.baidu.com"><img width="1043px" height="415px" src="../dest/img/timg.jpeg"
+                                                    alt=""></a>
+            </li>
+            <li>
+                <a href="http://www.baidu.com"><img width="1043px" height="415px" src="../dest/img/banner.png"
+                                                    alt=""></a>
+            </li>
+        </ul>
+        <ul class="pointer"></ul><!-- 点 -->
+        <a class="cut prev"><</a>
+        <a class="cut next">></a>
+    </div>
+    <!--评分-->
+    <div class="score">
+        <span>883人评分</span>
+        <i class="iconfont icon-star"></i>
+        <span>8.3</span>
+    </div>
+</div>
+<!--标签列表-->
+<div class="container">
+    <ul class="tagsList overflowHidden">
+        <li><a href="">寓教于乐</a></li>
+        <li><a href="">英语</a></li>
+        <li><a href="">逻辑思维</a></li>
+        <li><a href="">绘画</a></li>
+        <li><a href="">音乐</a></li>
+        <li><a href="">编程</a></li>
+        <li><a href="">生活常识</a></li>
+        <li><a href="">数学</a></li>
+        <li><a href="">语文</a></li>
+        <li><a href="">益智</a></li>
+        <li><a href="">学前教育</a></li>
+    </ul>
+</div>
+<!--折扣优选-->
+<div class="container">
+    <!--标题-->
+    <div class="com_title">
+        <div class="before lf"></div>
+        <div class="title lf">最新评价</div>
+        <div class="more rg cursorPointer weightColor">更多</div>
+    </div>
+    <!--列表-->
+    <ul class="listNews overflowHidden">
+        <li>
+            <div class="content">
+                <div class="img">
+                    <a href=""><img width="125px" height="128px" src="../dest/img/found_1.png"></a>
+                </div>
+                <div class="title">Tocalife world</div>
+                <div class="describe">
+                    <span>寓教于乐</span>
+                    <span>7.7<i class="iconfont icon-star"></i></span>
+                </div>
+            </div>
+        </li>
+
+        <li>
+            <div class="content">
+                <div class="img">
+                    <a href=""><img width="125px" height="128px" src="../dest/img/found_1.png"></a>
+                </div>
+                <div class="title">Tocalife world</div>
+                <div class="describe">
+                    <span>寓教于乐</span>
+                    <span>7.7<i class="iconfont icon-star"></i></span>
+                </div>
+            </div>
+        </li>
+
+        <li>
+            <div class="content">
+                <div class="img">
+                    <a href=""><img width="125px" height="128px" src="../dest/img/found_1.png"></a>
+                </div>
+                <div class="title">Tocalife world</div>
+                <div class="describe">
+                    <span>寓教于乐</span>
+                    <span>7.7<i class="iconfont icon-star"></i></span>
+                </div>
+            </div>
+        </li>
+
+        <li>
+            <div class="content">
+                <div class="img">
+                    <a href=""><img width="125px" height="128px" src="../dest/img/found_1.png"></a>
+                </div>
+                <div class="title">Tocalife world</div>
+                <div class="describe">
+                    <span>寓教于乐</span>
+                    <span>7.7<i class="iconfont icon-star"></i></span>
+                </div>
+            </div>
+        </li>
+
+        <li>
+            <div class="content">
+                <div class="img">
+                    <a href=""><img width="125px" height="128px" src="../dest/img/found_1.png"></a>
+                </div>
+                <div class="title">Tocalife world</div>
+                <div class="describe">
+                    <span>寓教于乐</span>
+                    <span>7.7<i class="iconfont icon-star"></i></span>
+                </div>
+            </div>
+        </li>
+
+        <li>
+            <div class="content">
+                <div class="img">
+                    <a href=""><img width="125px" height="128px" src="../dest/img/found_1.png"></a>
+                </div>
+                <div class="title">Tocalife world</div>
+                <div class="describe">
+                    <span>寓教于乐</span>
+                    <span>7.7<i class="iconfont icon-star"></i></span>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+<!--每日新发现-->
+<!--折扣优选-->
+<div class="container">
+    <!--标题-->
+    <div class="com_title">
+        <div class="before lf"></div>
+        <div class="title lf">最新评价</div>
+        <div class="more rg cursorPointer weightColor">更多</div>
+    </div>
+    <!--列表-->
+    <ul class="listNews overflowHidden">
+        <li>
+            <div class="content">
+                <div class="img">
+                    <a href=""><img width="125px" height="128px" src="../dest/img/found_1.png"></a>
+                </div>
+                <div class="title">Tocalife world</div>
+                <div class="describe">
+                    <span>寓教于乐</span>
+                    <span>7.7<i class="iconfont icon-star"></i></span>
+                </div>
+            </div>
+        </li>
+
+        <li>
+            <div class="content">
+                <div class="img">
+                    <a href=""><img width="125px" height="128px" src="../dest/img/found_1.png"></a>
+                </div>
+                <div class="title">Tocalife world</div>
+                <div class="describe">
+                    <span>寓教于乐</span>
+                    <span>7.7<i class="iconfont icon-star"></i></span>
+                </div>
+            </div>
+        </li>
+
+        <li>
+            <div class="content">
+                <div class="img">
+                    <a href=""><img width="125px" height="128px" src="../dest/img/found_1.png"></a>
+                </div>
+                <div class="title">Tocalife world</div>
+                <div class="describe">
+                    <span>寓教于乐</span>
+                    <span>7.7<i class="iconfont icon-star"></i></span>
+                </div>
+            </div>
+        </li>
+
+        <li>
+            <div class="content">
+                <div class="img">
+                    <a href=""><img width="125px" height="128px" src="../dest/img/found_1.png"></a>
+                </div>
+                <div class="title">Tocalife world</div>
+                <div class="describe">
+                    <span>寓教于乐</span>
+                    <span>7.7<i class="iconfont icon-star"></i></span>
+                </div>
+            </div>
+        </li>
+
+        <li>
+            <div class="content">
+                <div class="img">
+                    <a href=""><img width="125px" height="128px" src="../dest/img/found_1.png"></a>
+                </div>
+                <div class="title">Tocalife world</div>
+                <div class="describe">
+                    <span>寓教于乐</span>
+                    <span>7.7<i class="iconfont icon-star"></i></span>
+                </div>
+            </div>
+        </li>
+
+        <li>
+            <div class="content">
+                <div class="img">
+                    <a href=""><img width="125px" height="128px" src="../dest/img/found_1.png"></a>
+                </div>
+                <div class="title">Tocalife world</div>
+                <div class="describe">
+                    <span>寓教于乐</span>
+                    <span>7.7<i class="iconfont icon-star"></i></span>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+<!--往期发现-->
+<div class="container beforeContent">
+    <!--标题-->
+    <div class="com_title">
+        <div class="before lf"></div>
+        <div class="title lf">往期发现</div>
+        <div class="more rg cursorPointer weightColor">更多</div>
+    </div>
+    <ul class="overflowHidden   ">
+        <li>
+            <a href=""><img width="337px" height="150px" src="../dest/img/before_1.png" alt=""></a>
+        </li>
+
+        <li>
+            <a href=""><img width="337px" height="150px" src="../dest/img/before_2.png" alt=""></a>
+        </li>
+
+        <li>
+            <a href=""><img width="337px" height="150px" src="../dest/img/before_3.png" alt=""></a>
+        </li>
+    </ul>
+</div>
+<div class="container cheeseStar">
+    <!--标题-->
+    <div class="com_title">
+        <div class="before lf"></div>
+        <div class="title lf">芝士之星</div>
+        <div class="more rg cursorPointer weightColor">更多</div>
+    </div>
+    <!--内容-->
+    <ul class="userContent overflowHidden">
+        <li>
+            <a href="http://www.baidu.com">
+                <div class="portrait">
+                    <img src="../dest/img/okLogin.png">
+                    <div class="certification officialPadding">
+                        <div class="officialbag"></div>
+                    </div>
+                </div>
+                <div class="title">狐狸酱</div>
+                <div class="title_two">CheeseStar编辑</div>
+            </a>
+        </li>
+
+
+        <li>
+            <a href="http://www.baidu.com">
+                <div class="portrait">
+                    <img src="../dest/img/okLogin.png">
+                    <div class="certification">
+                        <div class="userbag"></div>
+                    </div>
+                </div>
+                <div class="title">狐狸酱</div>
+                <div class="title_two">CheeseStar编辑</div>
+            </a>
+        </li>
+
+        <li>
+            <a href="http://www.baidu.com">
+                <div class="portrait">
+                    <img src="../dest/img/okLogin.png">
+                    <div class="certification">
+                        <div class="userbag"></div>
+                    </div>
+                </div>
+                <div class="title">狐狸酱</div>
+                <div class="title_two">CheeseStar编辑</div>
+            </a>
+        </li>
+
+        <li>
+            <a href="http://www.baidu.com">
+                <div class="portrait">
+                    <img src="../dest/img/okLogin.png">
+                    <div class="certification">
+                        <div class="userbag"></div>
+                    </div>
+                </div>
+                <div class="title">狐狸酱</div>
+                <div class="title_two">CheeseStar编辑</div>
+            </a>
+        </li>
+
+
+        <li>
+            <a href="http://www.baidu.com">
+                <div class="portrait">
+                    <img src="../dest/img/okLogin.png">
+                    <div class="certification">
+                        <div class="userbag"></div>
+                    </div>
+                </div>
+                <div class="title">狐狸酱</div>
+                <div class="title_two">CheeseStar编辑</div>
+            </a>
+        </li>
+
+
+        <li>
+            <a href="http://www.baidu.com">
+                <div class="portrait">
+                    <img src="../dest/img/okLogin.png">
+                    <div class="certification">
+                        <div class="userbag"></div>
+                    </div>
+                </div>
+                <div class="title">狐狸酱</div>
+                <div class="title_two">CheeseStar编辑</div>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div class="container">
+    <!--标题-->
+    <div class="com_title">
+        <div class="before lf"></div>
+        <div class="title lf">妈妈精选</div>
+        <div class="more rg cursorPointer weightColor">更多</div>
+    </div>
+</div>
+<!--页面-->
+<div class="footer">
+    <div class="container clearfix footerContent">
+        <div class="left_contents lf">
+            <div class="logo lineBlock lf">
+                <a href="http://www.baidu.com">
+                    <img src="../dest/img/logo.png" alt="加载失败">
+                </a>
+            </div>
+            <ul class="navList clearfix lf">
+                <li class="activeClass"><a href="#">首页</a></li>
+                <li><a href="#">安利墙</a></li>
+                <li><a href="#">发现</a></li>
+                <li><a href="#">论坛</a></li>
+            </ul>
+        </div>
+        <div class="right_contents rg clearfix">
+            <div class="text lf">Contact Us</div>
+            <ul class="shareList lf clearfix">
+                <li><img src="../dest/img/WeChat.png"></li>
+                <li><img src="../dest/img/qq.png"></li>
+                <li><img src="../dest/img/weibo.png"></li>
+                <li><img src="../dest/img/zhihu.png"></li>
+                <li><img src="../dest/img/email.png"></li>
+            </ul>
+        </div>
+        <div class="both"></div>
+    </div>
+</div>
+<div class="returnTop">
+    <img class="hide" src="../dest/img/top.png" alt="">
+</div>
+<!--弹出层-->
+<div class="layui-m-layershade">
+    <div class="layui-m-layersection">
+        <div></div>
+    </div>
+</div>
+</body>
+<script src="http://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+<script src="../dest/js/headerAndFooter.min.js"></script>
+<script src="../dest/js/shuffling.min.js"></script>
+<script src="../dest/js/index.min.js"></script>
+<script src="../dest/js/Myapi.min.js"></script>
+<script src="../dest/js/found.min.js"></script>
+</html>

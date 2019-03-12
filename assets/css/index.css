@@ -143,6 +143,12 @@ html, body {
     -webkit-box-shadow: 0 2px 8px 1px rgba(0, 0, 0, 0.2);
             box-shadow: 0 2px 8px 1px rgba(0, 0, 0, 0.2);
     overflow: hidden; }
+    .search .history .clearLog {
+      background-color: #f2f2f5;
+      padding: 4px 22px 4px 0;
+      color: #1353ff;
+      font-size: 13px;
+      text-align: right; }
     .search .history li.activeClass .after {
       display: none;
       cursor: pointer;
@@ -189,43 +195,6 @@ html, body {
       .search .dimSearch li span {
         display: block;
         padding: 5px; }
-
-.banner {
-  position: relative;
-  height: 415px;
-  margin: 15px auto;
-  background-color: #528CE0; }
-  .banner .bannerContent {
-    position: relative;
-    width: 1043px;
-    overflow: hidden; }
-    .banner .bannerContent .img {
-      position: absolute;
-      left: 0;
-      top: 0; }
-  .banner li {
-    float: left; }
-    .banner li img {
-      border: 0;
-      display: block; }
-  .banner .editor {
-    position: absolute;
-    z-index: 999;
-    left: 20px;
-    top: 20px; }
-  .banner .score {
-    color: #fff;
-    position: absolute;
-    z-index: 999;
-    right: 22px;
-    bottom: 12px; }
-    .banner .score span:first-child {
-      font-size: 14px;
-      vertical-align: middle; }
-    .banner .score span:last-child {
-      font-size: 16px;
-      font-weight: 700;
-      vertical-align: middle; }
 
 .left_content {
   width: 685px; }
@@ -379,6 +348,8 @@ html, body {
       -o-transition: 0.4s all;
       transition: 0.4s all;
       display: none; }
+      .listContent .title .selectAd.activeClass {
+        display: block; }
       .listContent .title .selectAd .title {
         padding: 0 10px;
         -webkit-border-radius: 2px;
@@ -398,14 +369,19 @@ html, body {
       background-color: #fff;
       top: 35px;
       right: 10px;
-      padding: 22px 0;
+      padding: 18px 0;
       border: solid 1px #c2c2c2;
       -webkit-border-radius: 7px;
               border-radius: 7px;
       display: none; }
       .listContent .title .theSelect li {
-        padding: 0 15px;
+        padding: 4px 15px;
         margin-bottom: 18px; }
+        .listContent .title .theSelect li:hover {
+          cursor: pointer;
+          background-color: rgba(255, 255, 255, 0.4);
+          background-color: #dddddf;
+          color: red; }
         .listContent .title .theSelect li:last-child {
           margin-bottom: 0; }
       .listContent .title .theSelect.activeClass {
@@ -460,79 +436,6 @@ html, body {
     font-size: 14px;
     font-weight: 700;
     background-color: #f79640; }
-
-.pointer {
-  height: 4px;
-  position: absolute;
-  bottom: 16px; }
-
-.pointer li {
-  width: 42px;
-  height: 1px;
-  background: rgba(255, 255, 255, 0.2);
-  float: left;
-  margin: 0 5px;
-  cursor: pointer; }
-
-.pointer li.now {
-  height: 4px;
-  background: rgba(255, 255, 255, 0.5); }
-
-.cut {
-  background: rgba(255, 255, 255, 0.4);
-  position: absolute;
-  font-family: '宋体';
-  color: #fff;
-  text-align: center;
-  cursor: pointer;
-  opacity: 0.2; }
-
-.J_banner {
-  max-width: 100%;
-  position: relative;
-  overflow: hidden;
-  margin: 0 auto 10px; }
-
-.J_banner .img {
-  width: 2000px;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  left: 0; }
-
-.J_banner .img li {
-  float: left;
-  position: relative; }
-
-.J_banner1 .pointer {
-  width: 100px;
-  height: 15px;
-  position: absolute;
-  bottom: 16px;
-  left: 50%; }
-
-.J_banner1 .pointer li {
-  width: 15px;
-  height: 15px;
-  background: #d0d0d0;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
-  margin: 0 5px;
-  float: left; }
-
-.J_banner1 .pointer li.now {
-  background: #fff; }
-
-.J_banner .cut {
-  width: 34px;
-  height: 58px;
-  left: 20px;
-  font-size: 18px;
-  line-height: 58px; }
-
-.J_banner .cut.next {
-  left: auto;
-  right: 20px; }
 
 .returnTop {
   cursor: pointer;
