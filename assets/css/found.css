@@ -112,3 +112,16 @@
 
 .cheeseStar .userContent .title_two {
   color: #787878; }
+
+.checkMore {
+  padding: 18px 0;
+  margin-top: 20px;
+  background-color: #f7c049;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center; }
+  .checkMore a {
+    color: #ffffff; }
+
+.footer {
+  margin-top: 75px !important; }
