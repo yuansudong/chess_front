@@ -19,7 +19,6 @@ $orange: #f7c049;
     font-weight: 500;
     overflow: hidden;
     background-color: $orange;
-
     &:last-child {
       margin-right: 0;
     }
@@ -39,6 +38,10 @@ $orange: #f7c049;
     background-color: $white;
     margin-right: 16px;
     margin-bottom: 16px;
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 12px 2px rgba(30,13,4,.15);
+    }
     &:nth-child(6n) {
       margin-right: 0;
     }

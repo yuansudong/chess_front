@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../assets/css/common.css">
     <link rel="stylesheet" href="../assets/css/index.css">
     <link rel="stylesheet" href="../assets/css/shuffling.css">
+    <link rel="stylesheet" href="../assets/css/searchBox.css">
     <link rel="stylesheet" href="../dest/css/reuse.min.css">
     <link rel="stylesheet" href="../dest/css/found.min.css">
     <link rel="stylesheet" href="../dest/fonts/iconfont.css">
@@ -35,17 +36,26 @@
                 <i id="searchIcont" class="iconfont icon-Magnifier"></i>
                 <input id="search" class="lineBlock" autocomplete="off" type="text" placeholder="搜索...">
             </div>
-            <!--搜索历史记录-->
-            <ul class="history"></ul>
-            <!--实时模糊搜索-->
-            <ul class="dimSearch">
-                <li><span>实时模糊搜索数据1</span></li>
-                <li><span>实时模糊搜索数据2</span></li>
-                <li><span>实时模糊搜索数据3</span></li>
-                <li><span>实时模糊搜索数据4</span></li>
-                <li><span>实时模糊搜索数据5</span></li>
-                <li><span>实时模糊搜索数据6</span></li>
-            </ul>
+            <div class="inputLog">
+                <!--搜索历史记录-->
+                <ul class="history">
+                    <!--<li class="activeClass">-->
+                    <!--<a href="http://www.baidu.com">搜索历史记录搜索历史记录搜索</a>-->
+                    <!--&lt;!&ndash;关闭按钮&ndash;&gt;-->
+                    <!--<span class="iconfont icon-close after"></span>-->
+                    <!--</li>-->
+                    <!--<div class="clearLog hide"><span>历史搜索</span><a onclick="clertAll()" class="log" href="javascript:void(0)">清空</a></div>-->
+                </ul>
+                <!--实时模糊搜索-->
+                <ul class="dimSearch">
+                    <div>热门搜索</div>
+                    <li><span>实时模糊搜索数据1</span></li>
+                    <li><span>实时模糊搜索数据2</span></li>
+                    <li><span>实时模糊搜索数据3</span></li>
+                    <li><span>实时模糊搜索数据4</span></li>
+                    <li><span>实时模糊搜索数据5</span></li>
+                </ul>
+            </div>
         </form>
 
         <div class="message lineBlock">
