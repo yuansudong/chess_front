@@ -38,45 +38,52 @@
           float: left; }
         .forumContent .recently .listNews li .content .describe span:last-child {
           float: right; }
-  .forumContent .comForumContent .listNews {
+  .forumContent .comForumContent .listNewsContent {
     background-color: #ffffff;
-    padding: 26px;
+    padding: 26px 26px 14px 26px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
-    .forumContent .comForumContent .listNews li {
+    .forumContent .comForumContent .listNewsContent li {
       width: 310px;
       float: left;
       -webkit-box-sizing: border-box;
               box-sizing: border-box;
       background-color: #f9f8f8; }
-      .forumContent .comForumContent .listNews li:nth-child(odd) {
+      .forumContent .comForumContent .listNewsContent li:nth-child(2n) {
+        margin-bottom: 12px; }
+      .forumContent .comForumContent .listNewsContent li:nth-child(odd) {
         margin-right: 6px; }
-      .forumContent .comForumContent .listNews li:nth-child(even) {
+      .forumContent .comForumContent .listNewsContent li:nth-child(even) {
         margin-left: 6px; }
-      .forumContent .comForumContent .listNews li .content {
-        color: #999999; }
-        .forumContent .comForumContent .listNews li .content .img {
+      .forumContent .comForumContent .listNewsContent li .content {
+        overflow: hidden;
+        padding: 7px 12px; }
+        .forumContent .comForumContent .listNewsContent li .content .comImg {
+          float: left;
+          padding: 3px;
+          margin-right: 10px;
           width: 75px;
           height: 75px;
           overflow: hidden;
-          -webkit-border-radius: 18px;
-                  border-radius: 18px;
-          padding: 3px;
-          background-color: #fff; }
-          .forumContent .comForumContent .listNews li .content .img img {
-            display: block; }
-        .forumContent .comForumContent .listNews li .content .title {
-          font-size: 14px;
-          color: #999999;
-          margin-top: 20px;
-          display: -webkit-box;
-          -webkit-box-orient: vertical;
-          -webkit-line-clamp: 1;
-          overflow: hidden; }
-        .forumContent .comForumContent .listNews li .content .describe {
-          font-size: 13px;
-          overflow: hidden; }
-          .forumContent .comForumContent .listNews li .content .describe span:first-child {
-            float: left; }
-          .forumContent .comForumContent .listNews li .content .describe span:last-child {
-            float: right; }
+          -webkit-border-radius: 3px;
+                  border-radius: 3px;
+          background-color: #ffffff; }
+        .forumContent .comForumContent .listNewsContent li .content .textContent {
+          padding: 15px 0;
+          float: left; }
+          .forumContent .comForumContent .listNewsContent li .content .textContent .title {
+            font-size: 16px;
+            color: #404040;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+            overflow: hidden; }
+          .forumContent .comForumContent .listNewsContent li .content .textContent .count {
+            font-size: 14px;
+            font-weight: 600;
+            margin-top: 19px;
+            color: #999999;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+            overflow: hidden; }
