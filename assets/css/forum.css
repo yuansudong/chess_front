@@ -38,7 +38,7 @@
           float: left; }
         .forumContent .recently .listNews li .content .describe span:last-child {
           float: right; }
-  .forumContent .comForumContent .com_title {
+  .forumContent .comForumContent .unique.com_title {
     margin-top: 30px;
     margin-bottom: 23px; }
   .forumContent .comForumContent .listNewsContent {
