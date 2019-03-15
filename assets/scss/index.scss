@@ -433,7 +433,9 @@ html, body {
         background-color: $white;
         margin-bottom: 10px;
         border-radius: 3px;
-
+        &:last-child {
+          margin-bottom: 0;
+        }
         &:last-child {
           margin-bottom: 0;
         }

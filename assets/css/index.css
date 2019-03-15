@@ -286,6 +286,8 @@ html, body {
             border-radius: 3px; }
     .right_content .newEvaluation .evaluationList li:last-child {
       margin-bottom: 0; }
+    .right_content .newEvaluation .evaluationList li:last-child {
+      margin-bottom: 0; }
   .right_content .newEvaluation .evaluationList .imgAndTitle {
     margin-left: 6px; }
     .right_content .newEvaluation .evaluationList .imgAndTitle div:first-child {
