@@ -1,0 +1,82 @@
+.forumContent {
+  margin-top: 30px; }
+  .forumContent .recently .listNews li {
+    float: left;
+    width: 114px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 25px 18px 45px 18px;
+    background-color: #ffffff; }
+    .forumContent .recently .listNews li:hover {
+      -webkit-transform: scale(1.05);
+          -ms-transform: scale(1.05);
+              transform: scale(1.05);
+      -webkit-box-shadow: 0 0 12px 2px rgba(30, 13, 4, 0.15);
+              box-shadow: 0 0 12px 2px rgba(30, 13, 4, 0.15); }
+    .forumContent .recently .listNews li:nth-child(6n) {
+      margin-right: 0; }
+    .forumContent .recently .listNews li .content {
+      color: #999999; }
+      .forumContent .recently .listNews li .content .img {
+        width: 75px;
+        height: 75px;
+        overflow: hidden;
+        -webkit-border-radius: 18px;
+                border-radius: 18px; }
+      .forumContent .recently .listNews li .content .title {
+        font-size: 14px;
+        color: #999999;
+        margin-top: 20px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden; }
+      .forumContent .recently .listNews li .content .describe {
+        font-size: 13px;
+        overflow: hidden; }
+        .forumContent .recently .listNews li .content .describe span:first-child {
+          float: left; }
+        .forumContent .recently .listNews li .content .describe span:last-child {
+          float: right; }
+  .forumContent .comForumContent .listNews {
+    background-color: #ffffff;
+    padding: 26px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+    .forumContent .comForumContent .listNews li {
+      width: 310px;
+      float: left;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      background-color: #f9f8f8; }
+      .forumContent .comForumContent .listNews li:nth-child(odd) {
+        margin-right: 6px; }
+      .forumContent .comForumContent .listNews li:nth-child(even) {
+        margin-left: 6px; }
+      .forumContent .comForumContent .listNews li .content {
+        color: #999999; }
+        .forumContent .comForumContent .listNews li .content .img {
+          width: 75px;
+          height: 75px;
+          overflow: hidden;
+          -webkit-border-radius: 18px;
+                  border-radius: 18px;
+          padding: 3px;
+          background-color: #fff; }
+          .forumContent .comForumContent .listNews li .content .img img {
+            display: block; }
+        .forumContent .comForumContent .listNews li .content .title {
+          font-size: 14px;
+          color: #999999;
+          margin-top: 20px;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 1;
+          overflow: hidden; }
+        .forumContent .comForumContent .listNews li .content .describe {
+          font-size: 13px;
+          overflow: hidden; }
+          .forumContent .comForumContent .listNews li .content .describe span:first-child {
+            float: left; }
+          .forumContent .comForumContent .listNews li .content .describe span:last-child {
+            float: right; }

@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>论坛</title>
+    <link rel="stylesheet" href="../assets/css/init.css">
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/index.css">
+    <link rel="stylesheet" href="../assets/css/shuffling.css">
+    <link rel="stylesheet" href="../assets/css/searchBox.css">
+    <link rel="stylesheet" href="../assets/css/forum.css">
+    <link rel="stylesheet" href="../dest/css/reuse.min.css">
+    <link rel="stylesheet" href="../dest/fonts/iconfont.css">
+</head>
+<body>
+
+<!--头部-->
+<nav class="topNav">
+    <div class="container clearfix  nav">
+        <div class="logo lineBlock lf">
+            <a href="http://www.baidu.com">
+                <img src="../dest/img/logo.png" alt="加载失败">
+            </a>
+        </div>
+
+        <ul class="navList clearfix lf">
+            <li class="activeClass"><a href="#">首页</a></li>
+            <li><a href="#">安利墙</a></li>
+            <li><a href="#">发现</a></li>
+            <li><a href="#">论坛</a></li>
+        </ul>
+
+
+        <form class="search lf" onsubmit="return false;">
+            <!--input-->
+            <div class="searchInput">
+                <i id="searchIcont" class="iconfont icon-Magnifier"></i>
+                <input id="search" class="lineBlock" autocomplete="off" type="text" placeholder="搜索...">
+            </div>
+            <div class="inputLog">
+                <!--搜索历史记录-->
+                <ul class="history">
+                    <!--<li class="activeClass">-->
+                    <!--<a href="http://www.baidu.com">搜索历史记录搜索历史记录搜索</a>-->
+                    <!--&lt;!&ndash;关闭按钮&ndash;&gt;-->
+                    <!--<span class="iconfont icon-close after"></span>-->
+                    <!--</li>-->
+                    <!--<div class="clearLog hide"><span>历史搜索</span><a onclick="clertAll()" class="log" href="javascript:void(0)">清空</a></div>-->
+                </ul>
+                <!--实时模糊搜索-->
+                <ul class="dimSearch">
+                    <div>热门搜索</div>
+                    <li><span>实时模糊搜索数据1</span></li>
+                    <li><span>实时模糊搜索数据2</span></li>
+                    <li><span>实时模糊搜索数据3</span></li>
+                    <li><span>实时模糊搜索数据4</span></li>
+                    <li><span>实时模糊搜索数据5</span></li>
+                </ul>
+            </div>
+        </form>
+
+        <div class="message lineBlock">
+            <i class="iconfont icon-Pathx"></i>
+            <a href=""><span class="icon-car-count">0</span></a>
+        </div>
+        <div class="portrait lineBlock">
+            <!--<a href="http://www.baidu.com"><img src="../dest/img/noLogin.png" alt="加载失败"></a>-->
+            <a href="http://www.baidu.com"><img class="okLogin" src="../dest/img/okLogin.png" alt="加载失败"></a>
+        </div>
+        <div class="both"></div>
+    </div>
+</nav>
+<div class="both"></div>
+<!--位置-->
+<div class="location">
+    <div class="locationContent container">
+        你的位置:
+        <a target="_blank" href="./index.html">首页</a><span>&gt;</span><a target="_blank" href="#">论坛</a>
+    </div>
+</div>
+
+
+<div class="container forumContent">
+    <!--左边-->
+    <div class="left_content lf">
+        <div class="recently">
+            <!--标题-->
+            <div class="com_title">
+                <div class="before lf"></div>
+                <div class="title lf">最新评价</div>
+                <div class="more rg cursorPointer weightColor">更多</div>
+            </div>
+            <!--列表-->
+            <ul class="listNews overflowHidden">
+                <li>
+                    <div class="content">
+                        <div class="img">
+                            <a href=""><img width="75px" height="75px" src="../dest/img/found_1.png"></a>
+                        </div>
+                        <div class="title">Tocalife world</div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="content">
+                        <div class="img">
+                            <a href=""><img width="75px" height="75px" src="../dest/img/found_1.png"></a>
+                        </div>
+                        <div class="title">Tocalife world</div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="content">
+                        <div class="img">
+                            <a href=""><img width="75px" height="75px" src="../dest/img/found_1.png"></a>
+                        </div>
+                        <div class="title">Tocalife world</div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="content">
+                        <div class="img">
+                            <a href=""><img width="75px" height="75px" src="../dest/img/found_1.png"></a>
+                        </div>
+                        <div class="title">Tocalife world</div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="content">
+                        <div class="img">
+                            <a href=""><img width="75px" height="75px" src="../dest/img/found_1.png"></a>
+                        </div>
+                        <div class="title">Tocalife world</div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="content">
+                        <div class="img">
+                            <a href=""><img width="75px" height="75px" src="../dest/img/found_1.png"></a>
+                        </div>
+                        <div class="title">Tocalife world</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="comForumContent">
+            <!--标题-->
+            <div class="com_title">
+                <div class="before lf"></div>
+                <div class="title lf">最新评价</div>
+                <div class="more rg cursorPointer weightColor">更多</div>
+            </div>
+            <!--列表-->
+            <ul class="listNews overflowHidden">
+                <li>
+                    <div class="content">
+                        <div class="img">
+                            <img width="75px" height="75px" src="../dest/img/found_1.png">
+                        </div>
+                        <div class="title">Tocalife world</div>
+                    </div>
+                </li>
+
+
+
+            </ul>
+        </div>
+    </div>
+    <!--右边-->
+    <div class="right_content rg">
+        <!--二维码-->
+        <div class="QrCodeShare clearfix">
+            <!--二维码-->
+            <div class="code lf">
+                <img width="95px" height="95px" src="../dest/img/qrCode.png" alt="加载失败">
+            </div>
+            <div class="content lf">
+                <div class="maxTitle">芝士就是力量</div>
+                <div class="minTitle">欢迎关注我们</div>
+                <ul class="shareList clearfix">
+                    <li id="qq"><img src="../dest/img/WeChat.png"></li>
+                    <li><img src="../dest/img/qq.png"></li>
+                    <li><img src="../dest/img/weibo.png"></li>
+                    <li><img src="../dest/img/zhihu.png"></li>
+                    <li><img src="../dest/img/email.png"></li>
+                </ul>
+            </div>
+        </div>
+        <!--妈妈精选-->
+        <div class="momSelect">
+            <div class="com_title">
+                <div class="before lf"></div>
+                <div class="title lf">妈妈精选</div>
+                <div class="more rg cursorPointer">更多</div>
+            </div>
+            <div class="both"></div>
+            <!--内容-->
+            <ul class="momList">
+                <!--1-->
+                <li>
+                    <div class="content">
+                        <div class="count lf">1</div>
+                        <div class="img lf"><img width="60px" height="60px" src="../dest/img/KiddieWorld.png"
+                                                 alt="加载失败">
+                        </div>
+                        <div class="selectContent lf DarkGrey">
+                            <div class="name">KiddieWorld</div>
+                            <div class="mum">8.9<i class="iconfont icon-star"></i></div>
+                            <div class="type">寓教于乐</div>
+                        </div>
+                        <div class="both"></div>
+                    </div>
+                </li>
+                <!--2-->
+                <li>
+                    <div class="content">
+                        <div class="count lf">2</div>
+                        <div class="img lf"><img width="60px" height="60px" src="../dest/img/Blackboard.png" alt="加载失败">
+                        </div>
+                        <div class="selectContent lf DarkGrey">
+                            <div class="name">Blackboard</div>
+                            <div class="mum">8.5<i class="iconfont icon-star"></i></div>
+                            <div class="type">艺术/绘画</div>
+                        </div>
+                        <div class="both"></div>
+                    </div>
+                </li>
+                <!--3-->
+                <li>
+                    <div class="content">
+                        <div class="count lf">3</div>
+                        <div class="img lf"><img width="60px" height="60px" src="../dest/img/Classicalmusicforbaby.png"
+                                                 alt="加载失败">
+                        </div>
+                        <div class="selectContent lf DarkGrey">
+                            <div class="name">Classicalmusicforbaby</div>
+                            <div class="mum">8.3<i class="iconfont icon-star"></i></div>
+                            <div class="type">音乐/歌曲</div>
+                        </div>
+                        <div class="both"></div>
+                    </div>
+                </li>
+                <!--4-->
+                <li>
+                    <div class="content">
+                        <div class="count lf">4</div>
+                        <div class="img lf"><img width="60px" height="60px" src="../dest/img/language.png" alt="加载失败">
+                        </div>
+                        <div class="selectContent lf DarkGrey">
+                            <div class="name">儿童学习语言：单词和短语</div>
+                            <div class="mum">7.9<i class="iconfont icon-star"></i></div>
+                            <div class="type">语言/英语</div>
+                        </div>
+                        <div class="both"></div>
+                    </div>
+                </li>
+                <!--5-->
+                <li>
+                    <div class="content">
+                        <div class="count lf">5</div>
+                        <div class="img lf"><img width="60px" height="60px" src="../dest/img/Kitchen.png" alt="加载失败">
+                        </div>
+                        <div class="selectContent lf DarkGrey">
+                            <div class="name">Kitchen</div>
+                            <div class="mum">7.7<i class="iconfont icon-star"></i></div>
+                            <div class="type">寓教于乐/生活</div>
+                        </div>
+                        <div class="both"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--最新评价-->
+        <div class="newEvaluation">
+            <!--标题-->
+            <div class="com_title">
+                <div class="before lf"></div>
+                <div class="title lf">最新评价</div>
+                <div class="more rg cursorPointer">更多</div>
+            </div>
+            <div class="both"></div>
+            <!--内容-->
+            <ul class="evaluationList">
+                <li>
+                    <div class="content">
+                        <div class="imgAndTitle">
+                            <div class="lf lineBlock"><img width="50px" height="50px"
+                                                           src="../dest/img/evaluationImg.png" alt="加载失败"></div>
+                            <div class="lf">
+                                <h5>跟忆术家学语言</h5>
+                                <div class="star">
+                                    <i class="iconfont icon-star"></i>
+                                    <i class="iconfont icon-star"></i>
+                                    <i class="iconfont icon-star"></i>
+                                    <i class="iconfont icon-star"></i>
+                                    <i class="iconfont icon-star"></i>
+                                </div>
+                            </div>
+                            <div class="both"></div>
+                        </div>
+                        <!--评论-->
+                        <div class="commentsText">
+                            <div class="before"></div>
+                            <div class="text DarkGrey">很棒的软件，起初我只是给我的女儿作为语 言启蒙使用。但是随着和女儿一起学习......</div>
+                            <div class="active"></div>
+                        </div>
+                        <div class="appreciates DarkGrey clearfix">
+                            <i class="lf iconfont icon-zan"></i>
+                            <span class="rg name">小N她爸</span>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="content">
+                        <div class="imgAndTitle">
+                            <div class="lf lineBlock"><img width="50px" height="50px"
+                                                           src="../dest/img/evaluationImg.png" alt="加载失败"></div>
+                            <div class="lf">
+                                <h5>跟忆术家学语言</h5>
+                                <div class="star">
+                                    <i class="iconfont icon-star"></i>
+                                    <i class="iconfont icon-star"></i>
+                                    <i class="iconfont icon-star"></i>
+                                    <i class="iconfont icon-star"></i>
+                                    <i class="iconfont icon-star"></i>
+                                </div>
+                            </div>
+                            <div class="both"></div>
+                        </div>
+                        <!--评论-->
+                        <div class="commentsText">
+                            <div class="before"></div>
+                            <div class="text DarkGrey">很棒的软件，起初我只是给我的女儿作为语 言启蒙使用。但是随着和女儿一起学习......</div>
+                            <div class="active"></div>
+                        </div>
+                        <div class="appreciates DarkGrey clearfix">
+                            <i class="lf iconfont icon-zan"></i>
+                            <span class="rg name">小N她爸</span>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="content">
+                        <div class="imgAndTitle">
+                            <div class="lf lineBlock"><img width="50px" height="50px"
+                                                           src="../dest/img/evaluationImg.png" alt="加载失败"></div>
+                            <div class="lf">
+                                <h5>跟忆术家学语言</h5>
+                                <div class="star">
+                                    <i class="iconfont icon-star"></i>
+                                    <i class="iconfont icon-star"></i>
+                                    <i class="iconfont icon-star"></i>
+                                    <i class="iconfont icon-star"></i>
+                                    <i class="iconfont icon-star"></i>
+                                </div>
+                            </div>
+                            <div class="both"></div>
+                        </div>
+                        <!--评论-->
+                        <div class="commentsText">
+                            <div class="before"></div>
+                            <div class="text DarkGrey">很棒的软件，起初我只是给我的女儿作为语 言启蒙使用。但是随着和女儿一起学习......</div>
+                            <div class="active"></div>
+                        </div>
+                        <div class="appreciates DarkGrey clearfix">
+                            <i class="lf iconfont icon-zan"></i>
+                            <span class="rg name">小N她爸</span>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="content">
+                        <div class="imgAndTitle">
+                            <div class="lf lineBlock"><img width="50px" height="50px"
+                                                           src="../dest/img/evaluationImg.png" alt="加载失败"></div>
+                            <div class="lf">
+                                <h5>跟忆术家学语言</h5>
+                                <div class="star">
+                                    <i class="iconfont icon-star"></i>
+                                    <i class="iconfont icon-star"></i>
+                                    <i class="iconfont icon-star"></i>
+                                    <i class="iconfont icon-star"></i>
+                                    <i class="iconfont icon-star"></i>
+                                </div>
+                            </div>
+                            <div class="both"></div>
+                        </div>
+                        <!--评论-->
+                        <div class="commentsText">
+                            <div class="before"></div>
+                            <div class="text DarkGrey">很棒的软件，起初我只是给我的女儿作为语 言启蒙使用。但是随着和女儿一起学习......</div>
+                            <div class="active"></div>
+                        </div>
+                        <div class="appreciates DarkGrey clearfix">
+                            <i class="lf iconfont icon-zan"></i>
+                            <span class="rg name">小N她爸</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--热门标签-->
+        <div class="tags">
+            <!--标题-->
+            <div class="com_title">
+                <div class="before lf"></div>
+                <div class="title lf">热门标签</div>
+            </div>
+            <!--内容-->
+            <div class="content">
+                <ul class="clearfix">
+                    <li>
+                        <div class="tag">英语</div>
+                    </li>
+                    <li>
+                        <div class="tag">数学</div>
+                    </li>
+                    <li>
+                        <div class="tag">语文</div>
+                    </li>
+                    <li>
+                        <div class="tag">逻辑思维</div>
+                    </li>
+                    <li>
+                        <div class="tag">日常生活</div>
+                    </li>
+                    <li>
+                        <div class="tag">音乐</div>
+                    </li>
+                    <li>
+                        <div class="tag">寓教于乐</div>
+                    </li>
+                    <li>
+                        <div class="tag">自然</div>
+                    </li>
+                    <li>
+                        <div class="tag">编程</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="both"></div>
+</div>
+
+<div class="both"></div>
+<!--页面-->
+<div class="footer">
+    <div class="container clearfix footerContent">
+        <div class="left_contents lf">
+            <div class="logo lineBlock lf">
+                <a href="http://www.baidu.com">
+                    <img src="../dest/img/logo.png" alt="加载失败">
+                </a>
+            </div>
+            <ul class="navList clearfix lf">
+                <li class="activeClass"><a href="#">首页</a></li>
+                <li><a href="#">安利墙</a></li>
+                <li><a href="#">发现</a></li>
+                <li><a href="#">论坛</a></li>
+            </ul>
+        </div>
+        <div class="right_contents rg clearfix">
+            <div class="text lf">Contact Us</div>
+            <ul class="shareList lf clearfix">
+                <li><img src="../dest/img/WeChat.png"></li>
+                <li><img src="../dest/img/qq.png"></li>
+                <li><img src="../dest/img/weibo.png"></li>
+                <li><img src="../dest/img/zhihu.png"></li>
+                <li><img src="../dest/img/email.png"></li>
+            </ul>
+        </div>
+        <div class="both"></div>
+    </div>
+</div>
+<div class="returnTop">
+    <img class="hide" src="../dest/img/top.png" alt="">
+</div>
+<!--弹出层-->
+<div class="layui-m-layershade">
+    <div class="layui-m-layersection">
+        <div></div>
+    </div>
+</div>
+</body>
+<!--<script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>-->
+<script src="http://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+<script src="../dest/js/headerAndFooter.min.js"></script>
+<script src="../dest/js/shuffling.min.js"></script>
+<script src="../dest/js/index.min.js"></script>
+<script src="../dest/js/Myapi.min.js"></script>
+</html>

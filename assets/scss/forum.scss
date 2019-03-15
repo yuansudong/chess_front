@@ -1,0 +1,130 @@
+$white: #ffffff;
+$orange: #f7c049;
+
+.forumContent {
+  margin-top: 30px;
+  // 最近浏览
+  .recently {
+    .listNews {
+      li {
+        float: left;
+        width: 114px;
+        box-sizing: border-box;
+        padding: 25px 18px 45px 18px;
+        background-color: $white;
+
+        &:hover {
+          transform: scale(1.05);
+          box-shadow: 0 0 12px 2px rgba(30, 13, 4, .15);
+        }
+
+        &:nth-child(6n) {
+          margin-right: 0;
+        }
+
+        .content {
+          color: #999999;
+
+          .img {
+            width: 75px;
+            height: 75px;
+            overflow: hidden;
+            border-radius: 18px;
+          }
+
+          .title {
+            font-size: 14px;
+            color: #999999;
+            margin-top: 20px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+            overflow: hidden;
+          }
+
+          .describe {
+            font-size: 13px;
+            overflow: hidden;
+
+            span {
+              &:first-child {
+                float: left;
+              }
+
+              &:last-child {
+                float: right;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // 公共论坛部分
+  .comForumContent {
+    .listNews {
+      background-color: $white;
+      padding: 26px;
+      box-sizing: border-box;
+
+      li {
+        width: 310px;
+        float: left;
+        box-sizing: border-box;
+        background-color: #f9f8f8;
+
+        &:nth-child(odd) {
+          margin-right: 6px;
+        }
+
+        &:nth-child(even) {
+          margin-left: 6px;
+        }
+
+        &:hover {
+
+        }
+        .content {
+          color: #999999;
+          .img {
+            width: 75px;
+            height: 75px;
+            overflow: hidden;
+            border-radius: 18px;
+            padding: 3px;
+            background-color: #fff;
+            img {
+              display: block;
+            }
+          }
+
+          .title {
+            font-size: 14px;
+            color: #999999;
+            margin-top: 20px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+            overflow: hidden;
+          }
+
+          .describe {
+            font-size: 13px;
+            overflow: hidden;
+
+            span {
+              &:first-child {
+                float: left;
+              }
+
+              &:last-child {
+                float: right;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
