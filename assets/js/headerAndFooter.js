@@ -70,30 +70,33 @@ $(function () {
     })
 });
 
-// 历史记录存放方法
+// 历史记录存放方法  这个是登陆后到
 function SetInputLog(v) {
     if (!v || v === '') return;
     // 接受每次输入框输入的值，把他放到sessionStorage里，还要去重。
     if (!localStorage.getItem('searchValue')) {
         var data = [];
-        data.push({key: v});
+        data.unshift({key: v});
         var datas = JSON.stringify(data);
         localStorage.setItem('searchValue', datas);
     } else {
+        // 每次加到最前面，最好只能有5条，超过5条就覆盖
         var data = JSON.parse(localStorage.getItem('searchValue'));
-        data.push({key: v});
+        data.unshift({key: v});
         var obj = {};
         data = data.reduce(function (item, next) {
             obj[next.key] ? '' : obj[next.key] = true && item.push(next);
             return item;
         }, []);
+        if (data.length >= 5) {
+            data.splice(5, 1)
+        }
         localStorage.setItem('searchValue', JSON.stringify(data));
     }
 }
 
 // 历史记录获取方法
 function GetInputLog() {
-
     if (localStorage.getItem('searchValue')) {
         var d = localStorage.getItem('searchValue');
         d = JSON.parse(d);
@@ -103,16 +106,16 @@ function GetInputLog() {
 
 function addDom(d) {
     $('.history').html('');
+    if (d.length >0) {
+        $('.history').append(
+            '<div class="clearLog">' + '<span>历史搜索</span>' + ' <a onclick="clertAll()" class="log logs" href="javascript:void(0)">清空</a>' + '</div>'
+        )
+    }
     // 把数据动态的添加到历史记录下面。
     for (var i = 0; i < d.length; i++) {
         var text = d[i].key;
         var dom = '<li class="activeClass">' + '<a href="http://www.baidu.com">' + text + '</a>' + '<span onclick="clertlog(this)" class="iconfont icon-close after"></span> ' + '</li> '
         $('.history').append(dom)
-    }
-    if (d.length >0) {
-        $('.history').append(
-            '<div class="clearLog">' + ' <a onclick="clertAll()" class="log logs" href="javascript:void(0)">清除历史记录</a>' + '</div>'
-        )
     }
 }
 

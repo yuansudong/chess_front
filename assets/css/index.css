@@ -108,94 +108,125 @@ html, body {
     .footer .navList li:last-child {
       margin-right: 0; }
 
+/*
+// 搜索
 .search {
   position: relative;
   width: 146px;
   height: 30px;
   margin-top: 24px;
   margin-left: 40px;
-  font-size: 14px; }
-  .search .searchInput .icon-Magnifier {
-    position: absolute;
-    top: 5px;
-    left: 10px;
-    font-size: 20px;
-    color: #f79640;
-    font-weight: 600; }
-  .search .searchInput input[type="text"] {
-    width: 106px;
-    padding-left: 40px;
-    padding-right: 17px;
-    -webkit-border-radius: 14px;
-            border-radius: 14px;
-    border: none;
-    height: 30px;
-    outline: medium; }
-  .search .history {
+  font-size: 14px;
+  // 搜索输入框
+  .searchInput {
+    .icon-Magnifier {
+      position: absolute;
+      top: 5px;
+      left: 10px;
+      font-size: 20px;
+      color: $orange;
+      font-weight: 600;
+    }
+
+    input[type="text"] {
+      width: 106px;
+      padding-left: 40px;
+      padding-right: 17px;
+      border-radius: 14px;
+      border: none;
+      height: 30px;
+      outline: medium;
+    }
+  }
+
+  // 历史记录
+  .history {
     position: absolute;
     top: 40px;
     left: 0;
     z-index: 100;
     min-width: 146px;
-    -webkit-border-radius: 3px;
-            border-radius: 3px;
+    border-radius: 3px;
     background-color: #fff;
-    -webkit-box-shadow: 0 2px 8px 1px rgba(0, 0, 0, 0.2);
-            box-shadow: 0 2px 8px 1px rgba(0, 0, 0, 0.2);
-    overflow: hidden; }
-    .search .history .clearLog {
+    box-shadow: 0 2px 8px 1px rgba(0, 0, 0, .2);
+    overflow: hidden;
+    // 清除历史记录
+    .clearLog {
       background-color: #f2f2f5;
       padding: 4px 22px 4px 0;
       color: #1353ff;
       font-size: 13px;
-      text-align: right; }
-    .search .history li.activeClass .after {
-      display: none;
-      cursor: pointer;
-      position: absolute;
-      right: 0;
-      top: 7px;
-      content: "\e619";
-      color: #999999; }
-    .search .history li {
-      position: relative; }
-      .search .history li:hover {
-        background-color: #f2f2f5; }
-        .search .history li:hover .after {
-          display: block; }
-        .search .history li:hover a {
-          color: #ff0000; }
-      .search .history li a {
+      text-align: right;
+    }
+
+    li.activeClass {
+      .after {
+        display: none;
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        top: 7px;
+        content: "\e619";
+        color: #999999;
+      }
+    }
+
+    li {
+      position: relative;
+
+      &:hover {
+        .after {
+          display: block;
+        }
+
+        background-color: #f2f2f5;
+
+        a {
+          color: #ff0000;
+        }
+      }
+
+      a {
         color: #666;
         outline: 0;
         padding: 9px 22px 9px 13px;
         line-height: 12px;
         display: block;
-        white-space: nowrap; }
-  .search .dimSearch {
+        white-space: nowrap;
+
+      }
+    }
+  }
+
+  // 模糊搜索
+  .dimSearch {
     position: absolute;
     top: 36px;
     left: 0;
     min-width: 146px;
-    -webkit-border-radius: 3px;
-            border-radius: 3px;
+    border-radius: 3px;
     overflow: hidden;
     background-color: #fff;
-    -webkit-box-shadow: 0 2px 8px 1px rgba(0, 0, 0, 0.2);
-            box-shadow: 0 2px 8px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 8px 1px rgba(0, 0, 0, .2);
     z-index: 200;
-    display: none; }
-    .search .dimSearch li {
-      cursor: pointer; }
-      .search .dimSearch li:hover {
-        -webkit-transition: 0.4s all;
-        -o-transition: 0.4s all;
-        transition: 0.4s all;
-        background-color: #dddddf; }
-      .search .dimSearch li span {
-        display: block;
-        padding: 5px; }
+    display: none;
 
+    li {
+      &:hover {
+        transition: 0.4s all;
+        background-color: #dddddf;
+      }
+
+      cursor: pointer;
+
+      span {
+        display: block;
+        padding: 5px;
+      }
+    }
+  }
+
+}*/
 .left_content {
   width: 685px; }
 
