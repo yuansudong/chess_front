@@ -26,42 +26,6 @@
     font-size: 20px;
     color: #b0b0b0; }
 
-.wallContent .waterfall {
-  -webkit-column-count: 3;
-     -moz-column-count: 3;
-          column-count: 3;
-  -webkit-column-gap: 0;
-     -moz-column-gap: 0;
-          column-gap: 0; }
-  .wallContent .waterfall .item {
-    -webkit-column-break-inside: avoid;
-            break-inside: avoid;
-    padding: 10px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box; }
-    .wallContent .waterfall .item .item-content {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center;
-      height: auto;
-      font-size: 20px;
-      -webkit-box-sizing: border-box;
-              box-sizing: border-box; }
-
 .waterfallContent {
   display: block;
   padding: 10px 4px;
@@ -84,7 +48,8 @@
     margin: 12px 0 4px 0; }
     .waterfallContent .commentsText .text {
       font-size: 14px;
-      color: #222222; }
+      color: #222222;
+      display: block; }
     .waterfallContent .commentsText .before, .waterfallContent .commentsText .active {
       position: absolute;
       display: inline-block;

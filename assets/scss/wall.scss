@@ -29,31 +29,11 @@
 
 
   }
-
-  // 瀑布流
-  .waterfall {
-    column-count: 3;
-    column-gap: 0;
-    .item {
-      break-inside: avoid;
-      padding: 10px;
-      box-sizing: border-box;
-      .item-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: auto;
-        font-size: 20px;
-        box-sizing: border-box;
-      }
-    }
-  }
 }
-
 
 // 每个瀑布流的内容
 .waterfallContent {
+
   display: block;
   padding: 10px 4px;
   background-color: #ffffff;
@@ -89,6 +69,7 @@
     .text {
       font-size: 14px;
       color: #222222;
+      display: block;
       //overflow: hidden;
       //text-overflow: ellipsis;
       //display: -webkit-box;
