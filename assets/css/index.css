@@ -286,55 +286,53 @@ html, body {
             border-radius: 3px; }
     .right_content .newEvaluation .evaluationList li:last-child {
       margin-bottom: 0; }
-    .right_content .newEvaluation .evaluationList li:last-child {
-      margin-bottom: 0; }
-  .right_content .newEvaluation .evaluationList .imgAndTitle {
-    margin-left: 6px; }
-    .right_content .newEvaluation .evaluationList .imgAndTitle div:first-child {
-      margin-right: 10px; }
-    .right_content .newEvaluation .evaluationList .imgAndTitle .star .iconfont {
-      font-size: 12px;
-      color: #f7c049; }
-  .right_content .newEvaluation .evaluationList .commentsText {
-    position: relative;
-    padding: 0 30px;
-    margin: 12px 0 4px 0; }
-    .right_content .newEvaluation .evaluationList .commentsText .text {
-      font-size: 14px;
-      overflow: hidden;
-      -o-text-overflow: ellipsis;
-         text-overflow: ellipsis;
-      display: -webkit-box;
-      -webkit-box-orient: vertical;
-      -webkit-line-clamp: 2; }
-    .right_content .newEvaluation .evaluationList .commentsText .before, .right_content .newEvaluation .evaluationList .commentsText .active {
-      position: absolute;
-      display: inline-block;
-      width: 23px;
-      height: 21px;
-      -webkit-background-size: 23px 21px;
-              background-size: 23px 21px; }
-    .right_content .newEvaluation .evaluationList .commentsText .before {
-      top: 0;
-      left: 0;
-      background-image: url("../../dest/img/leftQuotes.png"); }
-    .right_content .newEvaluation .evaluationList .commentsText .active {
-      right: 0;
-      bottom: 0;
-      background-image: url("../../dest/img/rightQuotes.png"); }
-  .right_content .newEvaluation .evaluationList .appreciates {
-    padding: 0 30px; }
-    .right_content .newEvaluation .evaluationList .appreciates .name {
-      color: #f79640;
-      font-size: 14px; }
-      .right_content .newEvaluation .evaluationList .appreciates .name:before {
-        content: "";
+    .right_content .newEvaluation .evaluationList li .imgAndTitle {
+      margin-left: 6px; }
+      .right_content .newEvaluation .evaluationList li .imgAndTitle div:first-child {
+        margin-right: 10px; }
+      .right_content .newEvaluation .evaluationList li .imgAndTitle .star .iconfont {
+        font-size: 12px;
+        color: #f7c049; }
+    .right_content .newEvaluation .evaluationList li .commentsText {
+      position: relative;
+      padding: 0 30px;
+      margin: 12px 0 4px 0; }
+      .right_content .newEvaluation .evaluationList li .commentsText .text {
+        font-size: 14px;
+        overflow: hidden;
+        -o-text-overflow: ellipsis;
+           text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2; }
+      .right_content .newEvaluation .evaluationList li .commentsText .before, .right_content .newEvaluation .evaluationList li .commentsText .active {
+        position: absolute;
         display: inline-block;
-        vertical-align: middle;
-        width: 30px;
-        height: 1px;
-        margin-right: 2px;
-        background-color: #dddddd; }
+        width: 23px;
+        height: 21px;
+        -webkit-background-size: 23px 21px;
+                background-size: 23px 21px; }
+      .right_content .newEvaluation .evaluationList li .commentsText .before {
+        top: 0;
+        left: 0;
+        background-image: url("../../dest/img/leftQuotes.png"); }
+      .right_content .newEvaluation .evaluationList li .commentsText .active {
+        right: 0;
+        bottom: 0;
+        background-image: url("../../dest/img/rightQuotes.png"); }
+    .right_content .newEvaluation .evaluationList li .appreciates {
+      padding: 0 30px; }
+      .right_content .newEvaluation .evaluationList li .appreciates .name {
+        color: #f79640;
+        font-size: 14px; }
+        .right_content .newEvaluation .evaluationList li .appreciates .name:before {
+          content: "";
+          display: inline-block;
+          vertical-align: middle;
+          width: 30px;
+          height: 1px;
+          margin-right: 2px;
+          background-color: #dddddd; }
   .right_content .tags {
     -webkit-border-radius: 3px;
             border-radius: 3px; }

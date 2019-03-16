@@ -433,85 +433,85 @@ html, body {
         background-color: $white;
         margin-bottom: 10px;
         border-radius: 3px;
+
         &:last-child {
           margin-bottom: 0;
         }
-        &:last-child {
-          margin-bottom: 0;
-        }
-      }
 
-      // 图片和标题
-      .imgAndTitle {
-        margin-left: 6px;
+        // 图片和标题
+        .imgAndTitle {
+          margin-left: 6px;
 
-        div:first-child {
-          margin-right: 10px;
-        }
+          div:first-child {
+            margin-right: 10px;
+          }
 
-        .star {
-          .iconfont {
-            font-size: 12px;
-            color: #f7c049;
+          .star {
+            .iconfont {
+              font-size: 12px;
+              color: #f7c049;
+            }
           }
         }
-      }
 
-      // 评论留言
-      .commentsText {
-        position: relative;
-        padding: 0 30px;
-        margin: 12px 0 4px 0;
+        // 评论留言
+        .commentsText {
+          position: relative;
+          padding: 0 30px;
+          margin: 12px 0 4px 0;
 
-        .text {
-          font-size: 14px;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          display: -webkit-box;
-          -webkit-box-orient: vertical;
-          -webkit-line-clamp: 2;
-        }
+          .text {
+            font-size: 14px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+          }
 
-        .before, .active {
-          position: absolute;
-          display: inline-block;
-          width: 23px;
-          height: 21px;
-          background-size: 23px 21px;
-        }
-
-        .before {
-          top: 0;
-          left: 0;
-          background-image: url("../../dest/img/leftQuotes.png");
-        }
-
-        .active {
-          right: 0;
-          bottom: 0;
-          background-image: url("../../dest/img/rightQuotes.png");
-        }
-      }
-
-      // 赞赏
-      .appreciates {
-        padding: 0 30px;
-
-        .name {
-          &:before {
-            content: "";
+          .before, .active {
+            position: absolute;
             display: inline-block;
-            vertical-align: middle;
-            width: 30px;
-            height: 1px;
-            margin-right: 2px;
-            background-color: #dddddd;
+            width: 23px;
+            height: 21px;
+            background-size: 23px 21px;
           }
 
-          color: $orange;
-          font-size: 14px;
+          .before {
+            top: 0;
+            left: 0;
+            background-image: url("../../dest/img/leftQuotes.png");
+          }
+
+          .active {
+            right: 0;
+            bottom: 0;
+            background-image: url("../../dest/img/rightQuotes.png");
+          }
+        }
+
+        // 赞赏
+        .appreciates {
+          padding: 0 30px;
+
+          .name {
+            &:before {
+              content: "";
+              display: inline-block;
+              vertical-align: middle;
+              width: 30px;
+              height: 1px;
+              margin-right: 2px;
+              background-color: #dddddd;
+            }
+
+            color: $orange;
+            font-size: 14px;
+          }
         }
       }
+
+
     }
 
 
