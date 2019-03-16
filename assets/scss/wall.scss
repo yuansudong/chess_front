@@ -1,0 +1,38 @@
+// 安利墙
+.wallContent {
+  .maxTitle {
+    margin-top: 42px;
+    text-align: center;
+    font-size: 30px;
+    color: #ffc039;
+  }
+
+  .subtitle {
+    margin-top: 34px;
+    display: flex;
+    text-align: center;
+    &:before,&:after {
+      position: relative;
+      top: 13px;
+      content: "";
+      flex: 1;
+      height: 2px;
+      background-color: #b0b0b0;
+    }
+    .title {
+      width: 188px;
+      font-size: 20px;
+      color: #b0b0b0;
+    }
+
+
+  }
+
+
+
+
+
+
+}
+
+

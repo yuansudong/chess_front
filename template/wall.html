@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>安利墙</title>
+    <link rel="stylesheet" href="../assets/css/init.css">
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/index.css">
+    <link rel="stylesheet" href="../assets/css/shuffling.css">
+    <link rel="stylesheet" href="../assets/css/searchBox.css">
+    <link rel="stylesheet" href="../assets/css/wall.css">
+    <link rel="stylesheet" href="../dest/css/reuse.min.css">
+    <link rel="stylesheet" href="../dest/fonts/iconfont.css">
+</head>
+<body>
+
+<!--头部-->
+<nav class="topNav">
+    <div class="container clearfix  nav">
+        <div class="logo lineBlock lf">
+            <a href="http://www.baidu.com">
+                <img src="../dest/img/logo.png" alt="加载失败">
+            </a>
+        </div>
+
+        <ul class="navList clearfix lf">
+            <li class="activeClass"><a href="#">首页</a></li>
+            <li><a href="#">安利墙</a></li>
+            <li><a href="#">发现</a></li>
+            <li><a href="#">论坛</a></li>
+        </ul>
+
+
+        <form class="search lf" onsubmit="return false;">
+            <!--input-->
+            <div class="searchInput">
+                <i id="searchIcont" class="iconfont icon-Magnifier"></i>
+                <input id="search" class="lineBlock" autocomplete="off" type="text" placeholder="搜索...">
+            </div>
+            <div class="inputLog">
+                <!--搜索历史记录-->
+                <ul class="history">
+                    <!--<li class="activeClass">-->
+                    <!--<a href="http://www.baidu.com">搜索历史记录搜索历史记录搜索</a>-->
+                    <!--&lt;!&ndash;关闭按钮&ndash;&gt;-->
+                    <!--<span class="iconfont icon-close after"></span>-->
+                    <!--</li>-->
+                    <!--<div class="clearLog hide"><span>历史搜索</span><a onclick="clertAll()" class="log" href="javascript:void(0)">清空</a></div>-->
+                </ul>
+                <!--实时模糊搜索-->
+                <ul class="dimSearch">
+                    <div>热门搜索</div>
+                    <li><span>实时模糊搜索数据1</span></li>
+                    <li><span>实时模糊搜索数据2</span></li>
+                    <li><span>实时模糊搜索数据3</span></li>
+                    <li><span>实时模糊搜索数据4</span></li>
+                    <li><span>实时模糊搜索数据5</span></li>
+                </ul>
+            </div>
+        </form>
+
+        <div class="message lineBlock">
+            <i class="iconfont icon-Pathx"></i>
+            <a href=""><span class="icon-car-count">0</span></a>
+        </div>
+        <div class="portrait lineBlock">
+            <!--<a href="http://www.baidu.com"><img src="../dest/img/noLogin.png" alt="加载失败"></a>-->
+            <a href="http://www.baidu.com"><img class="okLogin" src="../dest/img/okLogin.png" alt="加载失败"></a>
+        </div>
+        <div class="both"></div>
+    </div>
+</nav>
+<div class="both"></div>
+<!--位置-->
+<div class="location">
+    <div class="locationContent container">
+        你的位置:
+        <a target="_blank" href="./index.html">首页</a><span>&gt;</span><a target="_blank" href="#">安利墙</a>
+    </div>
+</div>
+<!--瀑布流-->
+<div class="wallContent">
+    <div class="maxTitle">芝士安利墙</div>
+    <div class="subtitle">
+        <div class="title">大家都在学什么</div>
+    </div>
+
+
+    <div class="waterfall">
+        <div class="item">
+            <div class="item-content">
+                三月到大理赏樱花不远不近
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-content">
+                三月到大理赏樱花不远不近，才是最好的距离余生，请带上自己的阳光回忆，在部队那些日子被遗忘的花儿春光
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-content">
+                三月到大理赏樱花不远不近，才是最好的距离余生，请带上自己的阳光回忆
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<div class="both"></div>
+<!--页面-->
+<div class="footer">
+    <div class="container clearfix footerContent">
+        <div class="left_contents lf">
+            <div class="logo lineBlock lf">
+                <a href="http://www.baidu.com">
+                    <img src="../dest/img/logo.png" alt="加载失败">
+                </a>
+            </div>
+            <ul class="navList clearfix lf">
+                <li class="activeClass"><a href="#">首页</a></li>
+                <li><a href="#">安利墙</a></li>
+                <li><a href="#">发现</a></li>
+                <li><a href="#">论坛</a></li>
+            </ul>
+        </div>
+        <div class="right_contents rg clearfix">
+            <div class="text lf">Contact Us</div>
+            <ul class="shareList lf clearfix">
+                <li><img src="../dest/img/WeChat.png"></li>
+                <li><img src="../dest/img/qq.png"></li>
+                <li><img src="../dest/img/weibo.png"></li>
+                <li><img src="../dest/img/zhihu.png"></li>
+                <li><img src="../dest/img/email.png"></li>
+            </ul>
+        </div>
+        <div class="both"></div>
+    </div>
+</div>
+<div class="returnTop">
+    <img class="hide" src="../dest/img/top.png" alt="">
+</div>
+<!--弹出层-->
+<div class="layui-m-layershade">
+    <div class="layui-m-layersection">
+        <div></div>
+    </div>
+</div>
+</body>
+<!--<script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>-->
+<script src="http://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+<script src="../dest/js/headerAndFooter.min.js"></script>
+<script src="../dest/js/shuffling.min.js"></script>
+<script src="../dest/js/index.min.js"></script>
+<script src="../dest/js/Myapi.min.js"></script>
+</html>
