@@ -5,7 +5,7 @@
   color: #ffc039; }
 
 .wallContent .subtitle {
-  margin-top: 34px;
+  margin: 34px 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -26,55 +26,66 @@
     font-size: 20px;
     color: #b0b0b0; }
 
-.waterfallContent {
-  display: block;
-  padding: 10px 4px;
-  background-color: #ffffff;
-  margin-bottom: 10px;
-  -webkit-border-radius: 3px;
-          border-radius: 3px; }
-  .waterfallContent:last-child {
-    margin-bottom: 0; }
-  .waterfallContent .imgAndTitle {
-    margin-left: 6px; }
-    .waterfallContent .imgAndTitle div:first-child {
-      margin-right: 10px; }
-    .waterfallContent .imgAndTitle .star .iconfont {
-      font-size: 12px;
-      color: #f7c049; }
-  .waterfallContent .commentsText {
-    position: relative;
-    padding: 0 30px;
-    margin: 12px 0 4px 0; }
-    .waterfallContent .commentsText .text {
-      font-size: 14px;
-      color: #222222;
-      display: block; }
-    .waterfallContent .commentsText .before, .waterfallContent .commentsText .active {
-      position: absolute;
-      display: inline-block;
-      width: 23px;
-      height: 21px;
-      -webkit-background-size: 23px 21px;
-              background-size: 23px 21px; }
-    .waterfallContent .commentsText .before {
-      top: 0;
-      left: 0;
-      background-image: url("../../dest/img/leftQuotes.png"); }
-    .waterfallContent .commentsText .active {
-      right: 0;
-      bottom: 0;
-      background-image: url("../../dest/img/rightQuotes.png"); }
-  .waterfallContent .appreciates {
-    padding: 0 30px; }
-    .waterfallContent .appreciates .name {
-      color: #f7c049;
-      font-size: 14px; }
-      .waterfallContent .appreciates .name:before {
-        content: "";
+#masonry {
+  position: relative; }
+  #masonry .waterfallContent {
+    position: absolute;
+    width: 328px;
+    padding: 10px 4px;
+    background-color: #ffffff;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    overflow: hidden;
+    margin-bottom: 30px;
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1); }
+    #masonry .waterfallContent:last-child {
+      margin-bottom: 0; }
+    #masonry .waterfallContent .imgAndTitle {
+      margin-left: 6px; }
+      #masonry .waterfallContent .imgAndTitle div:first-child {
+        margin-right: 10px; }
+      #masonry .waterfallContent .imgAndTitle .titles {
+        font-size: 19px; }
+      #masonry .waterfallContent .imgAndTitle .star .iconfont {
+        font-size: 12px;
+        color: #f7c049; }
+    #masonry .waterfallContent .commentsText {
+      position: relative;
+      padding: 0 26px;
+      margin: 10px 0 4px 0; }
+      #masonry .waterfallContent .commentsText .text {
+        font-size: 14px;
+        color: #222222;
+        display: block;
+        margin-bottom: 12px; }
+      #masonry .waterfallContent .commentsText .before, #masonry .waterfallContent .commentsText .active {
+        position: absolute;
         display: inline-block;
-        vertical-align: middle;
-        width: 30px;
-        height: 1px;
-        margin-right: 2px;
-        background-color: #dddddd; }
+        width: 23px;
+        height: 21px;
+        -webkit-background-size: 23px 21px;
+                background-size: 23px 21px; }
+      #masonry .waterfallContent .commentsText .before {
+        top: 0;
+        left: 0;
+        background-image: url("../../dest/img/leftQuotes.png"); }
+      #masonry .waterfallContent .commentsText .active {
+        right: 0;
+        bottom: -14px;
+        background-image: url("../../dest/img/rightQuotes.png"); }
+    #masonry .waterfallContent .appreciates {
+      padding: 0 30px; }
+      #masonry .waterfallContent .appreciates .name {
+        color: #f7c049;
+        font-size: 14px; }
+        #masonry .waterfallContent .appreciates .name:before {
+          content: "";
+          display: inline-block;
+          vertical-align: middle;
+          width: 30px;
+          height: 1px;
+          margin-right: 2px;
+          background-color: #dddddd; }

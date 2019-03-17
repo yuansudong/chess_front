@@ -8,7 +8,7 @@
   }
 
   .subtitle {
-    margin-top: 34px;
+    margin: 34px 0;
     display: flex;
     text-align: center;
 
@@ -31,91 +31,128 @@
   }
 }
 
-// 每个瀑布流的内容
-.waterfallContent {
+#masonry {
+  position: relative;
+  // 每个瀑布流的内容
+  .waterfallContent {
+    position: absolute;
+    width: 328px;
+    padding: 10px 4px;
+    background-color: #ffffff;
+    border-radius: 3px;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 2px rgba(0,0,0,.1);
+    //&:nth-child(1), &:nth-child(6) {
+    //  height: 153px;
+    //}
+    //
+    //&:nth-child(2), &:nth-child(4) {
+    //  height: 263px;
+    //}
+    //
+    //&:nth-child(3), &:nth-child(5) {
+    //  height: 208px;
+    //}
+    //
+    //
+    //&:nth-child(1n+6), &:nth-child(6n+6) {
+    //  height: 153px;
+    //}
+    //
+    //&:nth-child(2n+6), &:nth-child(4n+6) {
+    //  height: 263px;
+    //}
+    //
+    //&:nth-child(3n+6), &:nth-child(5n+6) {
+    //  height: 208px;
+    //}
 
-  display: block;
-  padding: 10px 4px;
-  background-color: #ffffff;
-  margin-bottom: 10px;
-  border-radius: 3px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-
-  // 图片和标题
-  .imgAndTitle {
-    margin-left: 6px;
-
-    div:first-child {
-      margin-right: 10px;
+    &:last-child {
+      margin-bottom: 0;
     }
 
-    .star {
-      .iconfont {
-        font-size: 12px;
-        color: #f7c049;
+    // 图片和标题
+    .imgAndTitle {
+      margin-left: 6px;
+
+      div:first-child {
+        margin-right: 10px;
+      }
+
+      .titles {
+        font-size: 19px;
+      }
+
+      .star {
+        .iconfont {
+          font-size: 12px;
+          color: #f7c049;
+        }
       }
     }
-  }
 
-  // 评论留言
-  .commentsText {
-    position: relative;
-    padding: 0 30px;
-    margin: 12px 0 4px 0;
+    // 评论留言
+    .commentsText {
+      position: relative;
+      padding: 0 26px;
+      margin: 10px 0 4px 0;
+      .text {
+        font-size: 14px;
+        color: #222222;
+        display: block;
+        margin-bottom: 12px;
+        //overflow: hidden;
+        //text-overflow: ellipsis;
+        //display: -webkit-box;
+        //-webkit-box-orient: vertical;
+        //-webkit-line-clamp: 2;
+      }
 
-    .text {
-      font-size: 14px;
-      color: #222222;
-      display: block;
-      //overflow: hidden;
-      //text-overflow: ellipsis;
-      //display: -webkit-box;
-      //-webkit-box-orient: vertical;
-      //-webkit-line-clamp: 2;
-    }
-
-    .before, .active {
-      position: absolute;
-      display: inline-block;
-      width: 23px;
-      height: 21px;
-      background-size: 23px 21px;
-    }
-
-    .before {
-      top: 0;
-      left: 0;
-      background-image: url("../../dest/img/leftQuotes.png");
-    }
-
-    .active {
-      right: 0;
-      bottom: 0;
-      background-image: url("../../dest/img/rightQuotes.png");
-    }
-  }
-
-  // 赞赏
-  .appreciates {
-    padding: 0 30px;
-
-    .name {
-      &:before {
-        content: "";
+      .before, .active {
+        position: absolute;
         display: inline-block;
-        vertical-align: middle;
-        width: 30px;
-        height: 1px;
-        margin-right: 2px;
-        background-color: #dddddd;
+        width: 23px;
+        height: 21px;
+        background-size: 23px 21px;
       }
 
-      color: #f7c049;
-      font-size: 14px;
+      .before {
+        top: 0;
+        left: 0;
+        background-image: url("../../dest/img/leftQuotes.png");
+      }
+
+      .active {
+        right: 0;
+        bottom: -14px;
+        background-image: url("../../dest/img/rightQuotes.png");
+      }
+    }
+
+    // 赞赏
+    .appreciates {
+      padding: 0 30px;
+
+      .name {
+        &:before {
+          content: "";
+          display: inline-block;
+          vertical-align: middle;
+          width: 30px;
+          height: 1px;
+          margin-right: 2px;
+          background-color: #dddddd;
+        }
+
+        color: #f7c049;
+        font-size: 14px;
+      }
     }
   }
 }
+
+
+
 
